@@ -1,0 +1,9 @@
+Bun 1.3.14
+Bun source commit: 0d9b296af33f2b851fcbf4df3e9ec89751734ba4
+WebKit / JavaScriptCore source commit: 5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b
+
+Bun is not distributed solely under its own MIT declaration: its statically linked JavaScriptCore/WebKit code retains its original per-file licenses, including the LGPL text supplied in JavaScriptCore-COPYING.LIB.
+
+The corresponding Bun and pinned WebKit fork source/build materials are offered through https://github.com/hyz615/RUR1BIDX_OPEN . The fork source contains the modifications made for Bun. Put it at vendor/WebKit or set BUN_WEBKIT_PATH, then use the preserved Bun build:release:local / jsc:build scripts with matching target and ABI options. Full Bun source is available for rebuilding the code linked with the library.
+
+Source collection does not establish a tested offline or byte-identical rebuild. No native Bun rebuild/relink test was performed in this audit. All original per-file license and attribution requirements remain applicable. The shared MIT-standard-terms.txt supplies standard terms without inventing a copyright holder or year.

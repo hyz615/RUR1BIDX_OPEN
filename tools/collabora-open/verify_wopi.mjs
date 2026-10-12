@@ -77,7 +77,7 @@ try {
     if (!loaded && text.startsWith('status:')) {
       loaded = true;
       socket.send(`paste mimetype=text/plain\n${marker}`);
-      socket.send('uno .uno:Save');
+      socket.send('save dontTerminateEdit=0 dontSaveIfUnmodified=0');
     }
   });
   socket.send('coolclient 0.1');

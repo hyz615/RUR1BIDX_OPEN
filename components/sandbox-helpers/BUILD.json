@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "builder": "buildpack-deps:bookworm@sha256:5ac8377b7884040464fbf9390409073c6ac62ac8e6563e886fc560f9ea13ec5d",
+  "architecture": "x86_64-linux-gnu",
+  "compiler": {
+    "path": "/usr/bin/gcc",
+    "version": "gcc (Debian 12.2.0-14+deb12u1) 12.2.0",
+    "provider": {
+      "binary_package": "gcc-12",
+      "binary_version": "12.2.0-14+deb12u1",
+      "source_package": "gcc-12",
+      "source_version": "12.2.0-14+deb12u1"
+    }
+  },
+  "configuration_sha256": "42ee1cb2afffb7d29f7d86ed437f9eaf04387e3b6f476c09059c380de082764a",
+  "flags": [
+    "-O2",
+    "-static"
+  ],
+  "static_inputs": [
+    {
+      "name": "libc.a",
+      "path": "/usr/lib/x86_64-linux-gnu/libc.a",
+      "sha256": "8e5252c4b87e3d588e2d15e624502277c5d3bfb382fec7a5199ae752080b372c",
+      "provider": {
+        "binary_package": "libc6-dev:amd64",
+        "binary_version": "2.36-9+deb12u14",
+        "source_package": "glibc",
+        "source_version": "2.36-9+deb12u14"
+      }
+    },
+    {
+      "name": "libc_nonshared.a",
+      "path": "/usr/lib/x86_64-linux-gnu/libc_nonshared.a",
+      "sha256": "22a836e3aff767b559a703d42bde40fdb0e550297dbd99dd565f6a68b3ae8dda",
+      "provider": {
+        "binary_package": "libc6-dev:amd64",
+        "binary_version": "2.36-9+deb12u14",
+        "source_package": "glibc",
+        "source_version": "2.36-9+deb12u14"
+      }
+    },
+    {
+      "name": "libgcc.a",
+      "path": "/usr/lib/gcc/x86_64-linux-gnu/12/libgcc.a",
+      "sha256": "525f1bab26ddfe18ab442e3e51723b57417265f2804a65ddf3cc87b34eea856b",
+      "provider": {
+        "binary_package": "libgcc-12-dev:amd64",
+        "binary_version": "12.2.0-14+deb12u1",
+        "source_package": "gcc-12",
+        "source_version": "12.2.0-14+deb12u1"
+      }
+    },
+    {
+      "name": "libgcc_eh.a",
+      "path": "/usr/lib/gcc/x86_64-linux-gnu/12/libgcc_eh.a",
+      "sha256": "35ab41a9450ce844f0240f61a73a11aa2ba4f83d54d90f4199d777fb052bd391",
+      "provider": {
+        "binary_package": "libgcc-12-dev:amd64",
+        "binary_version": "12.2.0-14+deb12u1",
+        "source_package": "gcc-12",
+        "source_version": "12.2.0-14+deb12u1"
+      }
+    },
+    {
+      "name": "crt1.o",
+      "path": "/usr/lib/x86_64-linux-gnu/crt1.o",
+      "sha256": "4b46dce59ad3ab304d3f98fd370048b20c1569d6d0a9176623a6bbb0dc6d3513",
+      "provider": {
+        "binary_package": "libc6-dev:amd64",
+        "binary_version": "2.36-9+deb12u14",
+        "source_package": "glibc",
+        "source_version": "2.36-9+deb12u14"
+      }
+    },
+    {
+      "name": "crti.o",
+      "path": "/usr/lib/x86_64-linux-gnu/crti.o",
+      "sha256": "78acef26a7007f5320c98633376f2903e33895e694fbc2b91d189b38addbca8a",
+      "provider": {
+        "binary_package": "libc6-dev:amd64",
+        "binary_version": "2.36-9+deb12u14",
+        "source_package": "glibc",
+        "source_version": "2.36-9+deb12u14"
+      }
+    },
+    {
+      "name": "crtn.o",
+      "path": "/usr/lib/x86_64-linux-gnu/crtn.o",
+      "sha256": "121f2a5f12b13471dd8c7dabe3ff334df08540c270564d1a2b3c47ecbd8d3101",
+      "provider": {
+        "binary_package": "libc6-dev:amd64",
+        "binary_version": "2.36-9+deb12u14",
+        "source_package": "glibc",
+        "source_version": "2.36-9+deb12u14"
+      }
+    },
+    {
+      "name": "crtbeginT.o",
+      "path": "/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginT.o",
+      "sha256": "28d42fe29af04c8bbe4bd8f8debf427c80303c162aebca748da4bb34d7f1c4c7",
+      "provider": {
+        "binary_package": "libgcc-12-dev:amd64",
+        "binary_version": "12.2.0-14+deb12u1",
+        "source_package": "gcc-12",
+        "source_version": "12.2.0-14+deb12u1"
+      }
+    },
+    {
+      "name": "crtend.o",
+      "path": "/usr/lib/gcc/x86_64-linux-gnu/12/crtend.o",
+      "sha256": "96d81f92f663e0cf892cf0c83c4cf8ddfbbc1b32996d39c20843583cf91a26cc",
+      "provider": {
+        "binary_package": "libgcc-12-dev:amd64",
+        "binary_version": "12.2.0-14+deb12u1",
+        "source_package": "gcc-12",
+        "source_version": "12.2.0-14+deb12u1"
+      }
+    }
+  ],
+  "corresponding_source_packages": [
+    {
+      "binary_package": "libc6-dev:amd64",
+      "binary_version": "2.36-9+deb12u14",
+      "source_package": "glibc",
+      "source_version": "2.36-9+deb12u14"
+    },
+    {
+      "binary_package": "libgcc-12-dev:amd64",
+      "binary_version": "12.2.0-14+deb12u1",
+      "source_package": "gcc-12",
+      "source_version": "12.2.0-14+deb12u1"
+    }
+  ],
+  "helpers": [
+    {
+      "name": "spec-guard",
+      "source": "sources/api/src/spec-guard.c",
+      "source_sha256": "ac424557f0ec912dd11f7d320578b77c7d2e08ed36f57df626af6b3a551b018e",
+      "output": "/usr/local/bin/spec-guard",
+      "sha256": "ed3d6e10cb03ffb9f33286bbdcbf12c6867c984a32c847e9b1a083f348acf7c1",
+      "bytes": 767640,
+      "command": [
+        "/usr/bin/gcc",
+        "-O2",
+        "-static",
+        "-o",
+        "/usr/local/bin/spec-guard",
+        "/usr/local/src/codeapi-static-helpers/api/src/spec-guard.c"
+      ],
+      "elf_program_headers": "Elf file type is EXEC (Executable file)\nEntry point 0x401650\nThere are 10 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000518 0x000518 R   0x1000\n  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x078881 0x078881 R E 0x1000\n  LOAD           0x07a000 0x000000000047a000 0x000000000047a000 0x02724e 0x02724e R   0x1000\n  LOAD           0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x005b98 0x00b3c8 RW  0x1000\n  NOTE           0x000270 0x0000000000400270 0x0000000000400270 0x000020 0x000020 R   0x8\n  NOTE           0x000290 0x0000000000400290 0x0000000000400290 0x000044 0x000044 R   0x4\n  TLS            0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x000018 0x000060 R   0x8\n  GNU_PROPERTY   0x000270 0x0000000000400270 0x0000000000400270 0x000020 0x000020 R   0x8\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n  GNU_RELRO      0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x003928 0x003928 R   0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     .note.gnu.property .note.gnu.build-id .note.ABI-tag .rela.plt \n   01     .init .plt .text __libc_freeres_fn .fini \n   02     .rodata .eh_frame .gcc_except_table \n   03     .tdata .init_array .fini_array .data.rel.ro .got .got.plt .data __libc_subfreeres __libc_IO_vtables __libc_atexit .bss __libc_freeres_ptrs \n   04     .note.gnu.property \n   05     .note.gnu.build-id .note.ABI-tag \n   06     .tdata .tbss \n   07     .note.gnu.property \n   08     \n   09     .tdata .init_array .fini_array .data.rel.ro .got"
+    },
+    {
+      "name": "sandbox-rootfs-setup",
+      "source": "sources/docker/rootfs-setup.c",
+      "source_sha256": "52d922acb9af7c8b6fed45a29555e1fcd41de59d3429548b7b829ea0410308bb",
+      "output": "/usr/local/bin/sandbox-rootfs-setup",
+      "sha256": "5e807cfc62f0163cc2daa58bbaf603474bac72fdf768fe4189835078403ce914",
+      "bytes": 766928,
+      "command": [
+        "/usr/bin/gcc",
+        "-O2",
+        "-static",
+        "-o",
+        "/usr/local/bin/sandbox-rootfs-setup",
+        "/usr/local/src/codeapi-static-helpers/docker/rootfs-setup.c"
+      ],
+      "elf_program_headers": "Elf file type is EXEC (Executable file)\nEntry point 0x401750\nThere are 10 program headers, starting at offset 64\n\nProgram Headers:\n  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align\n  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000518 0x000518 R   0x1000\n  LOAD           0x001000 0x0000000000401000 0x0000000000401000 0x078261 0x078261 R E 0x1000\n  LOAD           0x07a000 0x000000000047a000 0x000000000047a000 0x02734e 0x02734e R   0x1000\n  LOAD           0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x005b98 0x00b3c8 RW  0x1000\n  NOTE           0x000270 0x0000000000400270 0x0000000000400270 0x000020 0x000020 R   0x8\n  NOTE           0x000290 0x0000000000400290 0x0000000000400290 0x000044 0x000044 R   0x4\n  TLS            0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x000018 0x000060 R   0x8\n  GNU_PROPERTY   0x000270 0x0000000000400270 0x0000000000400270 0x000020 0x000020 R   0x8\n  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0x10\n  GNU_RELRO      0x0a16d8 0x00000000004a26d8 0x00000000004a26d8 0x003928 0x003928 R   0x1\n\n Section to Segment mapping:\n  Segment Sections...\n   00     .note.gnu.property .note.gnu.build-id .note.ABI-tag .rela.plt \n   01     .init .plt .text __libc_freeres_fn .fini \n   02     .rodata .eh_frame .gcc_except_table \n   03     .tdata .init_array .fini_array .data.rel.ro .got .got.plt .data __libc_subfreeres __libc_IO_vtables __libc_atexit .bss __libc_freeres_ptrs \n   04     .note.gnu.property \n   05     .note.gnu.build-id .note.ABI-tag \n   06     .tdata .tbss \n   07     .note.gnu.property \n   08     \n   09     .tdata .init_array .fini_array .data.rel.ro .got"
+    }
+  ]
+}

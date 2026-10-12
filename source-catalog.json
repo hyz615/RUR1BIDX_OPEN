@@ -31333,6 +31333,586 @@
       "group": "ninfer",
       "source_repository": "https://github.com/hyz615/RUR1NINFER",
       "source_ref": "af03638668f46984bae0d568c3e4f8e79f20151c"
+    },
+    {
+      "name": "gcc-12",
+      "version": "12.2.0-14+deb12u1",
+      "license": "GPL-3.0-or-later WITH GCC-exception-3.1",
+      "licenses": [
+        "GPL-3.0-or-later WITH GCC-exception-3.1"
+      ],
+      "artifacts": [
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.dsc",
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0.orig.tar.gz",
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.debian.tar.xz"
+      ],
+      "group": "static-helpers",
+      "binary_packages": [
+        "libgcc-12-dev:amd64"
+      ],
+      "images": [
+        "sandbox-static-helpers"
+      ],
+      "evidence": [
+        "https://security.debian.org/debian-security/dists/bookworm-security/main/source/Sources.xz",
+        "https://deb.debian.org/debian/dists/bookworm/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "glibc",
+      "version": "2.36-9+deb12u14",
+      "license": "LGPL-2.1-or-later",
+      "licenses": [
+        "LGPL-2.1-or-later"
+      ],
+      "artifacts": [
+        "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.dsc",
+        "static-helpers/os-sources/debian/glibc/glibc_2.36.orig.tar.xz",
+        "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.debian.tar.xz"
+      ],
+      "group": "static-helpers",
+      "binary_packages": [
+        "libc6-dev:amd64"
+      ],
+      "images": [
+        "sandbox-static-helpers"
+      ],
+      "evidence": [
+        "https://deb.debian.org/debian/dists/bookworm/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "attr",
+      "version": "1:2.5.2-1ubuntu0.1",
+      "license": "GPL-2.0-only GPL-2.0-or-later LGPL-2.0-or-later LGPL-2.1-only",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later LGPL-2.0-or-later LGPL-2.1-only"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz.asc",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libattr1"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20260601~24.04.1",
+      "license": "GPL-2.0-only GPL-2.0-or-later MPL-2.0",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later MPL-2.0"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz",
+        "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "ca-certificates"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "coreutils",
+      "version": "9.4-3ubuntu6.3",
+      "license": "BSD-4-Clause-UC FSFULLR GFDL-1.3-only GFDL-NIV-1.3 GPL-3.0-only GPL-3.0-or-later ISC",
+      "licenses": [
+        "BSD-4-Clause-UC FSFULLR GFDL-1.3-only GFDL-NIV-1.3 GPL-3.0-only GPL-3.0-or-later ISC"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4.orig.tar.xz",
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "coreutils"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "cpio",
+      "version": "2.15+dfsg-1ubuntu2.1",
+      "license": "GPL-3.0-only GPL-3.0-or-later LGPL-3.0-only LGPL-3.0-or-later",
+      "licenses": [
+        "GPL-3.0-only GPL-3.0-or-later LGPL-3.0-only LGPL-3.0-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg.orig.tar.bz2",
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "cpio"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "diffutils",
+      "version": "1:3.10-1ubuntu0.1",
+      "license": "FSFAP FSFULLR GFDL-1.3-only GFDL-NIV-1.3 GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.0-only LGPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later X11 public-domain",
+      "licenses": [
+        "FSFAP FSFULLR GFDL-1.3-only GFDL-NIV-1.3 GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.0-only LGPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later X11 public-domain"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz.asc",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "diffutils"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "dpkg",
+      "version": "1.22.6ubuntu6.6",
+      "license": "GPL-2.0-only GPL-2.0-or-later public-domain-s-s-d",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later public-domain-s-s-d"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz",
+        "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "dpkg"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "fonts-noto-cjk",
+      "version": "1:20230817+repack1-3",
+      "license": "GPL-3.0-only GPL-3.0-or-later SIL-1.1",
+      "licenses": [
+        "GPL-3.0-only GPL-3.0-or-later SIL-1.1"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.dsc",
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1.orig.tar.xz",
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.debian.tar.xz"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "fonts-noto-cjk"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "gnupg2",
+      "version": "2.4.4-2ubuntu17.6",
+      "license": "BSD-3-Clause CC0-1.0 Expat GPL-2.0-or-later GPL-2.0-only GPL-3.0-only GPL-3.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later RFC-Reference TinySCHEME permissive",
+      "licenses": [
+        "BSD-3-Clause CC0-1.0 Expat GPL-2.0-or-later GPL-2.0-only GPL-3.0-only GPL-3.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later RFC-Reference TinySCHEME permissive"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "gpgv"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "gzip",
+      "version": "1.12-1ubuntu3.2",
+      "license": "FSF-manpages GFDL-1.3+-no-invariant GFDL-3 GPL-3.0-only GPL-3.0-or-later",
+      "licenses": [
+        "FSF-manpages GFDL-1.3+-no-invariant GFDL-3 GPL-3.0-only GPL-3.0-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/gzip/gzip_1.12.orig.tar.xz",
+        "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz",
+        "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "gzip"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "libcap2",
+      "version": "1:2.66-5ubuntu2.4",
+      "license": "BSD-3-Clause GPL-2.0-only GPL-2.0-or-later",
+      "licenses": [
+        "BSD-3-Clause GPL-2.0-only GPL-2.0-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66.orig.tar.xz",
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libcap2",
+        "libcap2-bin"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "openssl",
+      "version": "3.0.13-0ubuntu3.15",
+      "license": "Apache-2.0 Artistic GPL-1.0-only GPL-1.0-or-later",
+      "licenses": [
+        "Apache-2.0 Artistic GPL-1.0-only GPL-1.0-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.dsc",
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13.orig.tar.gz",
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libssl3t64"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://api.launchpad.net/1.0/ubuntu/+archive/primary?ws.op=getPublishedSources&source_name=openssl&version=3.0.13-0ubuntu3.15&exact_match=true",
+        "https://api.launchpad.net/1.0/ubuntu/+archive/primary/+sourcepub/18697897?ws.op=sourceFileUrls"
+      ]
+    },
+    {
+      "name": "pam",
+      "version": "1.5.3-5ubuntu5.7",
+      "license": "BSD-3-Clause BSD-tcp_wrappers Beerware GPL GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.0-only LGPL-2.0-or-later public-domain",
+      "licenses": [
+        "BSD-3-Clause BSD-tcp_wrappers Beerware GPL GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.0-only LGPL-2.0-or-later public-domain"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/pam/pam_1.5.3.orig.tar.xz",
+        "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+        "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libpam-modules",
+        "libpam-modules-bin",
+        "libpam-runtime",
+        "libpam0g"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "perl",
+      "version": "5.38.2-3.2ubuntu0.6",
+      "license": "Artistic Artistic-2.0 Artistic-dist BSD-3-Clause BSD-3-clause-GENERIC BSD-3-clause-with-weird-numbering BSD-4-clause-POWERDOG BZIP DONT-CHANGE-THE-GPL Expat FSFAP GPL-1.0-only GPL-1.0-or-later GPL-2.0-only GPL-2.0-or-later GPL-3+-WITH-BISON-EXCEPTION LGPL-2.1-only REGCOMP REGCOMP, SDBM-PUBLIC-DOMAIN TEXT-TABS Unicode Zlib",
+      "licenses": [
+        "Artistic Artistic-2.0 Artistic-dist BSD-3-Clause BSD-3-clause-GENERIC BSD-3-clause-with-weird-numbering BSD-4-clause-POWERDOG BZIP DONT-CHANGE-THE-GPL Expat FSFAP GPL-1.0-only GPL-1.0-or-later GPL-2.0-only GPL-2.0-or-later GPL-3+-WITH-BISON-EXCEPTION LGPL-2.1-only REGCOMP REGCOMP, SDBM-PUBLIC-DOMAIN TEXT-TABS Unicode Zlib"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/perl/perl_5.38.2.orig-regen-configure.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2.orig.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "perl-base"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "procps",
+      "version": "2:4.0.4-4ubuntu3.3",
+      "license": "GPL-2.0-only GPL-2.0-or-later LGPL-2.0-only LGPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later LGPL-2.0-only LGPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/procps/procps_4.0.4.orig.tar.xz",
+        "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.debian.tar.xz",
+        "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libproc2-0",
+        "procps"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "readline",
+      "version": "8.2-4build1",
+      "license": "GFDL GFDL-NIV-1.3+ GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later ISC-no-attribution",
+      "licenses": [
+        "GFDL GFDL-NIV-1.3+ GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later ISC-no-attribution"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/readline/readline_8.2-4build1.dsc",
+        "collabora-system/os-sources/debian/readline/readline_8.2.orig.tar.gz",
+        "collabora-system/os-sources/debian/readline/readline_8.2-4build1.debian.tar.xz"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libreadline8t64",
+        "readline-common"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "sed",
+      "version": "4.9-2ubuntu0.24.04.1",
+      "license": "BSD-4-Clause-UC BSL-1.0 GFDL-1.3-only GFDL-NIV-1.3+ GPL-3.0-only GPL-3.0-or-later ISC X11 pcre",
+      "licenses": [
+        "BSD-4-Clause-UC BSL-1.0 GFDL-1.3-only GFDL-NIV-1.3+ GPL-3.0-only GPL-3.0-or-later ISC X11 pcre"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/sed/sed_4.9.orig.tar.xz",
+        "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "sed"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "sqlite3",
+      "version": "3.45.1-1ubuntu2.8",
+      "license": "GPL-2.0-only GPL-2.0-or-later public-domain",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later public-domain"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig-www.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libsqlite3-0"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "systemd",
+      "version": "255.4-1ubuntu8.17",
+      "license": "CC0-1.0 Expat GPL-2.0-only GPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later public-domain",
+      "licenses": [
+        "CC0-1.0 Expat GPL-2.0-only GPL-2.0-or-later LGPL-2.1-only LGPL-2.1-or-later public-domain"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/systemd/systemd_255.4.orig.tar.gz",
+        "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz",
+        "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "libsystemd0",
+        "libudev1"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "tar",
+      "version": "1.35+dfsg-3ubuntu0.4",
+      "license": "GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later",
+      "licenses": [
+        "GPL-2.0-only GPL-2.0-or-later GPL-3.0-only GPL-3.0-or-later LGPL-2.1-only LGPL-2.1-or-later LGPL-3.0-only LGPL-3.0-or-later"
+      ],
+      "artifacts": [
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg.orig.tar.xz",
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.dsc"
+      ],
+      "group": "collabora-system",
+      "binary_packages": [
+        "tar"
+      ],
+      "images": [
+        "collabora-current"
+      ],
+      "evidence": [
+        "https://archive.ubuntu.com/ubuntu/dists/noble-updates/main/source/Sources.xz",
+        "https://security.ubuntu.com/ubuntu/dists/noble-security/main/source/Sources.xz"
+      ]
+    },
+    {
+      "name": "bun",
+      "version": "1.3.14",
+      "license": "MIT",
+      "artifacts": [
+        "bun/bun-1.3.14-0d9b296af33f2b851fcbf4df3e9ec89751734ba4.tar.gz",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.scope.json",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.git-blobs.json"
+      ],
+      "group": "bun",
+      "source_repository": "https://github.com/oven-sh/bun",
+      "source_ref": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+      "notes": [
+        "Bun 1.3.14 pins WebKit in scripts/build/deps/webkit.ts",
+        "Bun snapshot is complete. WebKit archive preserves Source, Tools, WebKitLibraries and top-level tracked files including fork modifications; test/data-only trees and Git history are omitted. No runtime binary is republished."
+      ]
+    },
+    {
+      "name": "bun-webkit",
+      "version": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+      "license": "WebKit/JavaScriptCore per-file licenses including LGPL; retain original notices",
+      "artifacts": [
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.scope.json",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.git-blobs.json"
+      ],
+      "group": "bun",
+      "source_repository": "https://github.com/oven-sh/WebKit",
+      "source_ref": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+      "notes": [
+        "Bun 1.3.14 pins WebKit in scripts/build/deps/webkit.ts",
+        "Bun snapshot is complete. WebKit archive preserves Source, Tools, WebKitLibraries and top-level tracked files including fork modifications; test/data-only trees and Git history are omitted. No runtime binary is republished."
+      ]
+    },
+    {
+      "name": "bun",
+      "version": "1.4.2",
+      "license": "MIT",
+      "artifacts": [
+        "bun/bun-1.4.2-744846f844374847c902b5e7fd59b4342a51ef99.tar.gz",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.scope.json",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.git-blobs.json"
+      ],
+      "group": "bun",
+      "source_repository": "https://github.com/oven-sh/bun",
+      "source_ref": "744846f844374847c902b5e7fd59b4342a51ef99",
+      "notes": [
+        "Bun 1.4.2 pins WebKit in scripts/build/deps/webkit.ts",
+        "Bun snapshot is complete. WebKit archive preserves Source, Tools, WebKitLibraries and top-level tracked files including fork modifications; test/data-only trees and Git history are omitted. No runtime binary is republished."
+      ]
+    },
+    {
+      "name": "bun-webkit",
+      "version": "2e2aa2290fac856d6f451ceacb58f7f5b44dd057",
+      "license": "WebKit/JavaScriptCore per-file licenses including LGPL; retain original notices",
+      "artifacts": [
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.scope.json",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.git-blobs.json"
+      ],
+      "group": "bun",
+      "source_repository": "https://github.com/oven-sh/WebKit",
+      "source_ref": "2e2aa2290fac856d6f451ceacb58f7f5b44dd057",
+      "notes": [
+        "Bun 1.4.2 pins WebKit in scripts/build/deps/webkit.ts",
+        "Bun snapshot is complete. WebKit archive preserves Source, Tools, WebKitLibraries and top-level tracked files including fork modifications; test/data-only trees and Git history are omitted. No runtime binary is republished."
+      ]
     }
   ],
   "artifacts": [
@@ -66686,6 +67266,711 @@
       "sha256": "f34e7d0da683d788ba1b469d40f2b1a2bf80165e1defa4d9601a22c447d21917",
       "bytes": 10327545,
       "group": "ninfer"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.dsc",
+      "urls": [
+        "https://security.debian.org/debian-security/pool/updates/main/g/gcc-12/gcc-12_12.2.0-14+deb12u1.dsc",
+        "https://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14+deb12u1.dsc"
+      ],
+      "sha256": "3aed0b189189c744dc9f4b74798a51d3e512ea85e492568db788a927c88e20ba",
+      "bytes": 27330,
+      "group": "static-helpers"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0.orig.tar.gz",
+      "urls": [
+        "https://security.debian.org/debian-security/pool/updates/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz",
+        "https://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0.orig.tar.gz"
+      ],
+      "sha256": "b8298be16aeeb96a889c6afed0a8e2241b47452e89cc81fe65ea849d5c740fcb",
+      "bytes": 87090343,
+      "group": "static-helpers"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.debian.tar.xz",
+      "urls": [
+        "https://security.debian.org/debian-security/pool/updates/main/g/gcc-12/gcc-12_12.2.0-14+deb12u1.debian.tar.xz",
+        "https://deb.debian.org/debian/pool/main/g/gcc-12/gcc-12_12.2.0-14+deb12u1.debian.tar.xz"
+      ],
+      "sha256": "59f7f7763a0c355e3f27ff9e7ac80d06382b29939361a87e7b139226bfe7402e",
+      "bytes": 1675204,
+      "group": "static-helpers"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.dsc",
+      "urls": [
+        "https://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9+deb12u14.dsc"
+      ],
+      "sha256": "cfe1f0b8dc1fa211ce5a45b3725cc38b29f88667f1140ebdca6de35cf9c6f1fd",
+      "bytes": 9765,
+      "group": "static-helpers"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/glibc/glibc_2.36.orig.tar.xz",
+      "urls": [
+        "https://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz"
+      ],
+      "sha256": "a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee",
+      "bytes": 19363988,
+      "group": "static-helpers"
+    },
+    {
+      "file": "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.debian.tar.xz",
+      "urls": [
+        "https://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9+deb12u14.debian.tar.xz"
+      ],
+      "sha256": "cf4ac9cd98185452cae3ef34e2e4ee12753e3d93fd0c62c61396d4a47eec902f",
+      "bytes": 918488,
+      "group": "static-helpers"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz"
+      ],
+      "sha256": "f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b",
+      "bytes": 334180,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz.asc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc",
+        "https://security.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc"
+      ],
+      "sha256": "eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c",
+      "bytes": 833,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz"
+      ],
+      "sha256": "11d4663edfac0d6738201ff942b65706cb1eb29ae0e8dad50790c9bf6509fc1f",
+      "bytes": 39340,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-1ubuntu0.1.dsc"
+      ],
+      "sha256": "3b0921ea6607447a2c61e5fa6136a72977712d1b1c7d24a205d107a17e7b3ad6",
+      "bytes": 2592,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz"
+      ],
+      "sha256": "fd3a351ad98f5b714915d4a7c82ae258a174b48f7d5391713c7f3445067143eb",
+      "bytes": 266460,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601~24.04.1.dsc"
+      ],
+      "sha256": "42292e01982f1a0aaed5ab540bc771322864bf92798ca3099a1e582ced440116",
+      "bytes": 1769,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/coreutils/coreutils_9.4.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz"
+      ],
+      "sha256": "ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52",
+      "bytes": 5979200,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz"
+      ],
+      "sha256": "23eb9e94564e2451ea02a879daa0ee9ba8db3777e84e020fcd08d49aaebc57d4",
+      "bytes": 43156,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.3.dsc"
+      ],
+      "sha256": "419fea2f0fec8299d95cafb11425391fe45d60b30d052c7f1e3a162ea56a6653",
+      "bytes": 2030,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg.orig.tar.bz2",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg.orig.tar.bz2",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg.orig.tar.bz2"
+      ],
+      "sha256": "9d699d5abad667f5571296190e6739a644ceb24f67677ccb128bb52ae620c579",
+      "bytes": 1632626,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg-1ubuntu2.1.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg-1ubuntu2.1.debian.tar.xz"
+      ],
+      "sha256": "2e87b97ce51403330d552ae9573506d6dfeaafef3dc6762f4c336d3473bc6912",
+      "bytes": 20000,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg-1ubuntu2.1.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/c/cpio/cpio_2.15+dfsg-1ubuntu2.1.dsc"
+      ],
+      "sha256": "a06902bf3a588f6e039da9a0fae98af707114afed82b5e7f7385134ba6db0796",
+      "bytes": 1416,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz"
+      ],
+      "sha256": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e",
+      "bytes": 1624240,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz.asc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc"
+      ],
+      "sha256": "a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7",
+      "bytes": 833,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz"
+      ],
+      "sha256": "5010764e1ebbb3e2a99b90e0c14b86d44d15508f8ba7fa2ec7a51ffcba706d49",
+      "bytes": 15332,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1ubuntu0.1.dsc"
+      ],
+      "sha256": "cd25a52b3cc70a46c98462e3893491d9a461cebbf8600461c879c0c900ae88b4",
+      "bytes": 2175,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz"
+      ],
+      "sha256": "7048ee31e30066ae123cdcb891cfa1ad55b2f42a4e04fca2c5db41607ae25196",
+      "bytes": 5548716,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc"
+      ],
+      "sha256": "5828d5dd77635c8bd0197116446bc64ec76913500affbcb42aaae1644acb749d",
+      "bytes": 3156,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.dsc"
+      ],
+      "sha256": "d99fa306ff3e79b870affea52b25633bf36d1f8b15ad5c99dec13c30526dc87a",
+      "bytes": 2142,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1.orig.tar.xz"
+      ],
+      "sha256": "544a4f53d2dbf35d02760e1e4631228431c384fcd729a18dd6257adc4c62fee3",
+      "bytes": 188294384,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/f/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.debian.tar.xz"
+      ],
+      "sha256": "288a41af8d2d6eb839ae5e889ceed178fbcbc15d024a1762377aed65d1db523c",
+      "bytes": 6460,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2"
+      ],
+      "sha256": "67ebe016ca90fa7688ce67a387ebd82c6261e95897db7b23df24ff335be85bc6",
+      "bytes": 7886036,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc"
+      ],
+      "sha256": "47986167998b2cb6be4e4cdeef0c468139e06580ed65ce2cf241c527d74e54db",
+      "bytes": 386,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz"
+      ],
+      "sha256": "c66b2623b54792f70c6598367ad1f3c4dcf7c65e68c2a4e4e98f0ba6eaa8ba80",
+      "bytes": 97820,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc"
+      ],
+      "sha256": "67504c8f474dce8880c25a5a14993d419b3f39db2a77039f24e65903ce93f4b9",
+      "bytes": 3947,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gzip/gzip_1.12.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12.orig.tar.xz"
+      ],
+      "sha256": "ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956",
+      "bytes": 825548,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz"
+      ],
+      "sha256": "13008977038dcf4058301a96006e994a5c3c48877d2bc39ee4c29d234ba21832",
+      "bytes": 22820,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.12-1ubuntu3.2.dsc"
+      ],
+      "sha256": "5919ccc72dbb8a02b7c461345f3c04bd3b33445ff2a23035b8d5837db3f09d44",
+      "bytes": 2042,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/libcap2/libcap2_2.66.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz"
+      ],
+      "sha256": "15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2",
+      "bytes": 181592,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz"
+      ],
+      "sha256": "7eb46752c6b59984494d2f641a049b9d4b394b7d1fe067729ccbc413c5943136",
+      "bytes": 24724,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc"
+      ],
+      "sha256": "8178019803f285b92e52e82cf84b0a6fc18840041270b2c588db826b8277e3e0",
+      "bytes": 2319,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/pam/pam_1.5.3.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3.orig.tar.xz"
+      ],
+      "sha256": "7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283",
+      "bytes": 1020076,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz"
+      ],
+      "sha256": "20a011e675ba5c2fdb22b681c395b3282128dfff119b8bec9adc39f4e87cddf9",
+      "bytes": 207384,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.5.3-5ubuntu5.7.dsc"
+      ],
+      "sha256": "df25ccfc35891011b8976281516ea239a6eb2cb17bec07c17d4ee2fc7a7be96e",
+      "bytes": 2772,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/perl/perl_5.38.2.orig-regen-configure.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz"
+      ],
+      "sha256": "4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2",
+      "bytes": 418808,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/perl/perl_5.38.2.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz"
+      ],
+      "sha256": "d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8",
+      "bytes": 13679524,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz"
+      ],
+      "sha256": "5c94f7708145fbe1ca97233c5c83c2bb70c6875013fc17ac50137ec735242bb7",
+      "bytes": 184740,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.6.dsc"
+      ],
+      "sha256": "ece66ceafd3502733ece75ac7aaae4122123fde84921d95d5b8151ebf115057f",
+      "bytes": 3081,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/procps/procps_4.0.4.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4.orig.tar.xz"
+      ],
+      "sha256": "22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e",
+      "bytes": 1401540,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.3.debian.tar.xz"
+      ],
+      "sha256": "895493786388b9ffa8a9ba894f473371cd4bbd2aa5089a8327cfdf00cf7cbc2d",
+      "bytes": 39588,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu3.3.dsc"
+      ],
+      "sha256": "0a57e936bcadc6f226991a0d02f20a190763eba59a830784ef51669c04745d58",
+      "bytes": 2280,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/readline/readline_8.2-4build1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-4build1.dsc"
+      ],
+      "sha256": "442c688eb851652987a0b1a7f85d236c6fa445757f188bc275ec475d0fabf22f",
+      "bytes": 2926,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/readline/readline_8.2.orig.tar.gz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2.orig.tar.gz"
+      ],
+      "sha256": "3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35",
+      "bytes": 3043952,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/readline/readline_8.2-4build1.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-4build1.debian.tar.xz"
+      ],
+      "sha256": "d3b4bfa92d0026f5d3f5d2b21e2bf6d8ae163f9ccdebdcef20afde77901c7b70",
+      "bytes": 33816,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sed/sed_4.9.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz"
+      ],
+      "sha256": "6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181",
+      "bytes": 1397092,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz"
+      ],
+      "sha256": "81ac2757638817c9628f51dbdf425e0bfc820dd8a97e2bdef10cdaeba1dec7c0",
+      "bytes": 63288,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc"
+      ],
+      "sha256": "b62f26deec4d06d8d096d577e0a0eb004f4e79da2c75ed5338e1ed8c175f9fcf",
+      "bytes": 1999,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig-www.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz"
+      ],
+      "sha256": "79b60798195a024d447e661e5bbc1eb40af50387ebf840e6f581190cc02064b6",
+      "bytes": 5693812,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz"
+      ],
+      "sha256": "e32e817f7b4166a301f60b14a711871bfab7d35c1d7e29b585dfc479ae150aa4",
+      "bytes": 8257884,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz"
+      ],
+      "sha256": "d543bf91c6f14ccd52ebe44d6ef3b360196b2596e0a7ca86089aef5fc52f5ec0",
+      "bytes": 37512,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc"
+      ],
+      "sha256": "f3c0a904d2d2386e81b39774f2a2f00f92c42adb2f141ff59cc6a347c4487a69",
+      "bytes": 2601,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/systemd/systemd_255.4.orig.tar.gz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz"
+      ],
+      "sha256": "96e75bd08c57ad401677456fb88ef54a9f05bb1695693013bc6ecce839640fd5",
+      "bytes": 14952427,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz"
+      ],
+      "sha256": "4695ff34f83b1f7e6e02bf3cfac2e2a44ac76b6cfc5a38c0081bac6919d547bb",
+      "bytes": 272596,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.17.dsc"
+      ],
+      "sha256": "8e5f4e5a7b7ee457214be1efd1ea1d380186c38b146d8c98af5da0f625d3c396",
+      "bytes": 7324,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/tar/tar_1.35+dfsg.orig.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg.orig.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg.orig.tar.xz"
+      ],
+      "sha256": "9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8",
+      "bytes": 2111608,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+        "https://security.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz"
+      ],
+      "sha256": "66111c3bd3ca8c4d619ae67c6f80eaeee46f239dbfecad78d1f08ce0a924a133",
+      "bytes": 52244,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.dsc",
+      "urls": [
+        "https://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.dsc",
+        "https://security.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35+dfsg-3ubuntu0.4.dsc"
+      ],
+      "sha256": "08ed7d5680f4d342723e0ef5c568c95be1c5053b4c2d0f2723b63ddd378a908d",
+      "bytes": 2124,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.dsc",
+      "urls": [
+        "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/openssl/3.0.13-0ubuntu3.15/openssl_3.0.13-0ubuntu3.15.dsc"
+      ],
+      "sha256": "ae1c9a23219f0617b866d765f750ebd3bac74d93b7a235e6e53289781a056f0a",
+      "bytes": 2516,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/openssl/openssl_3.0.13.orig.tar.gz",
+      "urls": [
+        "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/openssl/3.0.13-0ubuntu3.15/openssl_3.0.13.orig.tar.gz"
+      ],
+      "sha256": "88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313",
+      "bytes": 15294843,
+      "group": "collabora-system"
+    },
+    {
+      "file": "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz",
+      "urls": [
+        "https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/openssl/3.0.13-0ubuntu3.15/openssl_3.0.13-0ubuntu3.15.debian.tar.xz"
+      ],
+      "sha256": "a48bc18f3afd7030cd73712f180af343c4642e2d0ac65ac06fe1ec0ca7506077",
+      "bytes": 209648,
+      "group": "collabora-system"
+    },
+    {
+      "file": "bun/bun-1.3.14-0d9b296af33f2b851fcbf4df3e9ec89751734ba4.tar.gz",
+      "urls": [
+        "https://codeload.github.com/oven-sh/bun/tar.gz/0d9b296af33f2b851fcbf4df3e9ec89751734ba4"
+      ],
+      "sha256": "aa045c1f3ddd3eb41ed8452d8a73eaab3b3322386416ebb1b160a6af6978d3e5",
+      "bytes": 54914493,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz",
+      "urls": [],
+      "sha256": "fe13a6a77b1706fccf0c7a4e78a23990a61b7df755609962330bf9d900a9cfe5",
+      "bytes": 362294969,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-1.4.2-744846f844374847c902b5e7fd59b4342a51ef99.tar.gz",
+      "urls": [
+        "https://codeload.github.com/oven-sh/bun/tar.gz/744846f844374847c902b5e7fd59b4342a51ef99"
+      ],
+      "sha256": "25e09a8804535b8fbea1dad9f95af8402fc9133d28127d5594ff00df1549590e",
+      "bytes": 64602344,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz",
+      "urls": [],
+      "sha256": "d0bc6ed9145ffc87aff0326505555264a1c9f3015bbd54186cc07cb8348d7a16",
+      "bytes": 421102435,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.scope.json",
+      "urls": [],
+      "sha256": "aaf4381437db1af525d2b0cd4edc80f09092be3195f42ad33582881e24da1117",
+      "bytes": 4628,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.git-blobs.json",
+      "urls": [],
+      "sha256": "ee5dfefb4cdcd9ddfc9b7f4fe74b2b1765219bf954ea56e86ed587236422a73c",
+      "bytes": 13350841,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.scope.json",
+      "urls": [],
+      "sha256": "17b0f8de949d68ea3e7de08fa914a445482fcd36ba4c78ab5efcbf5dcd5127e8",
+      "bytes": 4830,
+      "group": "bun"
+    },
+    {
+      "file": "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.git-blobs.json",
+      "urls": [],
+      "sha256": "8189edc6179d6e387d482f6038f6b5e913cec8d60c7a2781f730b8d5fb88f5c3",
+      "bytes": 14059857,
+      "group": "bun"
     }
   ],
   "bundles": [
@@ -70394,6 +71679,107 @@
       "group": "ninfer",
       "artifacts": [
         "ninfer/ninfer-1.0.1-source.tar.gz"
+      ]
+    },
+    {
+      "file": "static-helpers-sources-1.tar.gz",
+      "url": "https://github.com/hyz615/RUR1BIDX_OPEN/releases/download/sources-2026-10-12/static-helpers-sources-1.tar.gz",
+      "sha256": "e51e03b0a3fb87088d966797713a8ea326f7252d5bdc2a43580c2f7d643c47e4",
+      "bytes": 109091794,
+      "group": "static-helpers",
+      "artifacts": [
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.dsc",
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0.orig.tar.gz",
+        "static-helpers/os-sources/debian/gcc-12/gcc-12_12.2.0-14+deb12u1.debian.tar.xz",
+        "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.dsc",
+        "static-helpers/os-sources/debian/glibc/glibc_2.36.orig.tar.xz",
+        "static-helpers/os-sources/debian/glibc/glibc_2.36-9+deb12u14.debian.tar.xz"
+      ]
+    },
+    {
+      "file": "collabora-system-sources-1.tar.gz",
+      "url": "https://github.com/hyz615/RUR1BIDX_OPEN/releases/download/sources-2026-10-12/collabora-system-sources-1.tar.gz",
+      "sha256": "a4c53aa6d71dcfa1677a16770a9482da691bf93c22087b8a0a5c832f1e3f72b4",
+      "bytes": 281257711,
+      "group": "collabora-system",
+      "artifacts": [
+        "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2.orig.tar.xz.asc",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/attr/attr_2.5.2-1ubuntu0.1.dsc",
+        "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.tar.xz",
+        "collabora-system/os-sources/debian/ca-certificates/ca-certificates_20260601~24.04.1.dsc",
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4.orig.tar.xz",
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.debian.tar.xz",
+        "collabora-system/os-sources/debian/coreutils/coreutils_9.4-3ubuntu6.3.dsc",
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg.orig.tar.bz2",
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/cpio/cpio_2.15+dfsg-1ubuntu2.1.dsc",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10.orig.tar.xz.asc",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/diffutils/diffutils_3.10-1ubuntu0.1.dsc",
+        "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz",
+        "collabora-system/os-sources/debian/dpkg/dpkg_1.22.6ubuntu6.6.dsc",
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.dsc",
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1.orig.tar.xz",
+        "collabora-system/os-sources/debian/fonts-noto-cjk/fonts-noto-cjk_20230817+repack1-3.debian.tar.xz",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz",
+        "collabora-system/os-sources/debian/gnupg2/gnupg2_2.4.4-2ubuntu17.6.dsc",
+        "collabora-system/os-sources/debian/gzip/gzip_1.12.orig.tar.xz",
+        "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.debian.tar.xz",
+        "collabora-system/os-sources/debian/gzip/gzip_1.12-1ubuntu3.2.dsc",
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66.orig.tar.xz",
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz",
+        "collabora-system/os-sources/debian/libcap2/libcap2_2.66-5ubuntu2.4.dsc",
+        "collabora-system/os-sources/debian/pam/pam_1.5.3.orig.tar.xz",
+        "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.debian.tar.xz",
+        "collabora-system/os-sources/debian/pam/pam_1.5.3-5ubuntu5.7.dsc",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2.orig-regen-configure.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2.orig.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz",
+        "collabora-system/os-sources/debian/perl/perl_5.38.2-3.2ubuntu0.6.dsc",
+        "collabora-system/os-sources/debian/procps/procps_4.0.4.orig.tar.xz",
+        "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.debian.tar.xz",
+        "collabora-system/os-sources/debian/procps/procps_4.0.4-4ubuntu3.3.dsc",
+        "collabora-system/os-sources/debian/readline/readline_8.2-4build1.dsc",
+        "collabora-system/os-sources/debian/readline/readline_8.2.orig.tar.gz",
+        "collabora-system/os-sources/debian/readline/readline_8.2-4build1.debian.tar.xz",
+        "collabora-system/os-sources/debian/sed/sed_4.9.orig.tar.xz",
+        "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz",
+        "collabora-system/os-sources/debian/sed/sed_4.9-2ubuntu0.24.04.1.dsc",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig-www.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1.orig.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz",
+        "collabora-system/os-sources/debian/sqlite3/sqlite3_3.45.1-1ubuntu2.8.dsc",
+        "collabora-system/os-sources/debian/systemd/systemd_255.4.orig.tar.gz",
+        "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.debian.tar.xz",
+        "collabora-system/os-sources/debian/systemd/systemd_255.4-1ubuntu8.17.dsc",
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg.orig.tar.xz",
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz",
+        "collabora-system/os-sources/debian/tar/tar_1.35+dfsg-3ubuntu0.4.dsc",
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.dsc",
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13.orig.tar.gz",
+        "collabora-system/os-sources/debian/openssl/openssl_3.0.13-0ubuntu3.15.debian.tar.xz"
+      ]
+    },
+    {
+      "file": "bun-sources-1.tar.gz",
+      "url": "https://github.com/hyz615/RUR1BIDX_OPEN/releases/download/sources-2026-10-12/bun-sources-1.tar.gz",
+      "sha256": "be367ecff3cb1dcf5c145f4e387902efc1cd6ee6792734244ad35bf5175fb309",
+      "bytes": 901664883,
+      "group": "bun",
+      "artifacts": [
+        "bun/bun-1.3.14-0d9b296af33f2b851fcbf4df3e9ec89751734ba4.tar.gz",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz",
+        "bun/bun-1.4.2-744846f844374847c902b5e7fd59b4342a51ef99.tar.gz",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.scope.json",
+        "bun/bun-webkit-1.3.14-5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b.tar.gz.git-blobs.json",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.scope.json",
+        "bun/bun-webkit-1.4.2-2e2aa2290fac856d6f451ceacb58f7f5b44dd057.tar.gz.git-blobs.json"
       ]
     }
   ]

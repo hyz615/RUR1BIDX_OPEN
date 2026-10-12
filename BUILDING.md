@@ -59,3 +59,20 @@ The relevant source catalogs include upstream build recipes and pinned native
 dependency versions where available. See the accompanying native-source audit
 for any unresolved exact-build correspondence; a JavaScript wrapper alone is
 not represented as complete source for a bundled native library or WASM binary.
+
+## Bun and WebKit / JavaScriptCore
+
+The `bun` source group contains the observed Bun versions and the exact WebKit
+fork commits pinned by each version's `scripts/build/deps/webkit.ts`. Fetch the
+group or select the required Bun version with `fetch_sources.py`. Preserve the
+fork modifications and original per-file licenses; the WebKit code is not
+covered solely by Bun's own MIT declaration.
+
+Place the matching WebKit source at `vendor/WebKit` in the Bun checkout, or use
+its `BUN_WEBKIT_PATH` option. Follow the preserved Bun local WebKit and release
+build scripts, including the target architecture and ABI settings. The source
+scope and Git-blob records describe each reconstructed WebKit archive. Git
+history, unrelated test trees and compiled outputs are excluded; generated
+source, legal notices and build resources are retained. No complete offline or
+byte-identical Bun rebuild was performed in this audit. See `evidence/bun/` and
+`PUBLICATION_LIMITATIONS.json`.

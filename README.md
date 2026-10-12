@@ -10,7 +10,7 @@ RUR1 BIDX 随附第三方组件的对应源码、必要修改及构建材料。
 `source-catalog.json` 将组件及准确版本对应到源码文件、原始下载地址和 SHA-256。
 本仓库 Releases 同时提供经过校验的源码集合；文件名和目录保持目录清单中的对应关系。
 
-也可使用 Python 3 从固定来源取回选定组件的源码：
+也可使用 Python 3.11 或更新版本取回选定组件的源码：
 
 ```sh
 python fetch_sources.py --catalog source-catalog.json --list
@@ -19,6 +19,9 @@ python fetch_sources.py --catalog source-catalog.json --group GROUP_NAME --desti
 ```
 
 请用 `--list` 输出的名称选择组件。脚本逐文件验证 SHA-256，不执行下载的源码或构建脚本。
+原始下载不可用或源码是按固定 Git 提交自行归档时，脚本自动从 Releases 源码集合中取回，
+同时核对集合及其中目标文件的 SHA-256。集合缓存在目标目录的 `.source-bundles/`；
+只读取所需的普通文件，不展开归档中的链接或执行其内容。
 源码包内的版权、许可证、发行版补丁和构建规则是适用条款的原始依据。
 软件包元数据里的许可名称用于索引，不替代逐文件许可，也不是组合分发合规证明。
 

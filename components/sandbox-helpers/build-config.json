@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "compiler": "gcc",
+  "flags": ["-O2", "-static"],
+  "mode": "0111",
+  "libraries": ["libc.a", "libc_nonshared.a", "libgcc.a", "libgcc_eh.a", "crt1.o", "crti.o", "crtn.o", "crtbeginT.o", "crtend.o"],
+  "license_files": ["LICENSE", "NOTICE"],
+  "helpers": [
+    {"name": "spec-guard", "source": "api/src/spec-guard.c", "output": "/usr/local/bin/spec-guard"},
+    {"name": "sandbox-rootfs-setup", "source": "docker/rootfs-setup.c", "output": "/usr/local/bin/sandbox-rootfs-setup"}
+  ]
+}

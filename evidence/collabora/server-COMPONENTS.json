@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "coverage": "Source-built online service and browser; engine packages are recorded separately",
+  "source": {
+    "repository": "https://github.com/CollaboraOnline/online.mirror.git",
+    "ref": "cp-26.04.5-1",
+    "commit": "22ce52fb5173821dd90782638afcbfb6b6d7cb40",
+    "archive_url": "https://github.com/CollaboraOnline/online.mirror/archive/22ce52fb5173821dd90782638afcbfb6b6d7cb40.tar.gz",
+    "archive_sha256": "534f4390c473744f4809e36775d711fd9df6e0c872e5190bf5af8f72b008d1dd",
+    "version_hash_length": 10,
+    "archive_engine_directories": [
+      "include/COKit",
+      "officecfg",
+      "distro-configs"
+    ],
+    "license": "MPL-2.0",
+    "include_path": "engine/include"
+  },
+  "poco_source": {
+    "version": "1.15.3",
+    "url": "https://github.com/pocoproject/poco/releases/download/poco-1.15.3-release/poco-1.15.3-all.tar.bz2",
+    "sha256": "562a1ba1a6db4665f81091c35e997b73f87e1b45e2ab2854cd720d2349518abc",
+    "cmake_arguments": [
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DBUILD_SHARED_LIBS=OFF",
+      "-DCMAKE_CXX_FLAGS=-D_GLIBCXX_USE_CXX11_ABI=0",
+      "-DENABLE_TESTS=OFF",
+      "-DENABLE_SAMPLES=OFF",
+      "-DENABLE_DATA=OFF",
+      "-DENABLE_MONGODB=OFF",
+      "-DENABLE_REDIS=OFF",
+      "-DENABLE_JWT=OFF",
+      "-DENABLE_ACTIVERECORD=OFF",
+      "-DENABLE_ENCODINGS=OFF"
+    ]
+  },
+  "npm": [
+    {
+      "ecosystem": "npm",
+      "name": "dompurify",
+      "version": "3.4.14",
+      "license": "(MPL-2.0 OR Apache-2.0)",
+      "source": {
+        "type": "git",
+        "url": "git://github.com/cure53/DOMPurify.git"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "fzstd",
+      "version": "0.1.0",
+      "license": "MIT",
+      "source": "https://github.com/101arrowz/fzstd"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "gl-matrix",
+      "version": "3.4.4",
+      "license": "MIT",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/toji/gl-matrix.git"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "hammerjs",
+      "version": "2.0.8",
+      "license": "MIT",
+      "source": {
+        "type": "git",
+        "url": "git://github.com/hammerjs/hammer.js.git"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "jquery",
+      "version": "3.5.1",
+      "license": "MIT",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/jquery/jquery.git"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "jquery-ui",
+      "version": "1.13.2",
+      "license": "MIT",
+      "source": {
+        "type": "git",
+        "url": "git://github.com/jquery/jquery-ui.git"
+      }
+    },
+    {
+      "ecosystem": "npm",
+      "name": "marked",
+      "version": "15.0.6",
+      "license": "MIT",
+      "source": "git://github.com/markedjs/marked.git"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "smartmenus",
+      "version": "1.0.0",
+      "license": "NOASSERTION",
+      "source": {
+        "type": "git",
+        "url": "git://github.com/vadikom/smartmenus.git"
+      }
+    }
+  ],
+  "executables": [
+    {
+      "path": "usr/bin/coolconfig",
+      "sha256": "8633534ce7905a4b29c31b074c2e03d18620c82a2ebd7d8a3f4691809e5df65d",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libssl.so.3",
+        "libstdc++.so.6"
+      ]
+    },
+    {
+      "path": "usr/bin/coolconvert",
+      "sha256": "d90c0e123d9584197a7c4ddbe9ae93ca0e50a3e832651dc71e0f8c5a5541c3d7",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libssl.so.3",
+        "libstdc++.so.6"
+      ]
+    },
+    {
+      "path": "usr/bin/coolforkit-caps",
+      "sha256": "5d51c1919befa406c9715d59fa57cff173d4a46820499d7c6f2918f6ae7f5d14",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcap.so.2",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpng16.so.16",
+        "libssl.so.3",
+        "libstdc++.so.6",
+        "libz.so.1",
+        "libzstd.so.1"
+      ]
+    },
+    {
+      "path": "usr/bin/coolforkit-ns",
+      "sha256": "0a91abf902c826000d8591bfcea867f22322b66df84fcb3976063092f29cc585",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcap.so.2",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libpng16.so.16",
+        "libssl.so.3",
+        "libstdc++.so.6",
+        "libz.so.1",
+        "libzstd.so.1"
+      ]
+    },
+    {
+      "path": "usr/bin/coolmount",
+      "sha256": "a55182352c44aff786d7658015f92b13a09c8fde8bb5b0b28c744450a84992ec",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libssl.so.3",
+        "libstdc++.so.6"
+      ]
+    },
+    {
+      "path": "usr/bin/coolstress",
+      "sha256": "547dcee3b5c7d0cf02e61012f7683c14fd7d600b4e5e78ad56b0226c0003f30b",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libssl.so.3",
+        "libstdc++.so.6"
+      ]
+    },
+    {
+      "path": "usr/bin/coolwsd",
+      "sha256": "589513f0b13217826d95e68e3a0e94f2716b544d80196eec565a88e2f87ded90",
+      "needed_shared_libraries": [
+        "libc.so.6",
+        "libcrypto.so.3",
+        "libgcc_s.so.1",
+        "libm.so.6",
+        "libssl.so.3",
+        "libstdc++.so.6"
+      ]
+    }
+  ]
+}

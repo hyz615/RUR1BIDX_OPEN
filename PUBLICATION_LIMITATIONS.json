@@ -20,5 +20,43 @@
       "reason": "Runtime libheif/libde265 versions are confirmed and source captured; README describes local LLVM-path edit but does not pin Emscripten/compiler version or include the original native build receipt. Rebuilding/relinking has not been verified."
     }
   ],
-  "ninfer_linked_distribution_review": "https://github.com/hyz615/RUR1NINFER/blob/codex/engine-1.0.1-source/distribution/engine-1.0.1/LEGAL_REVIEW.json"
+  "ninfer_linked_distribution_review": "https://github.com/hyz615/RUR1NINFER/blob/codex/engine-1.0.1-source/distribution/engine-1.0.1/LEGAL_REVIEW.json",
+  "original_notice_provenance": [
+    {
+      "name": "binary",
+      "version": "0.3.0",
+      "reason": "Original standalone copyright/permission notice absent; explicit published license declaration and standard terms supplied",
+      "metadata_only": false
+    },
+    {
+      "name": "eastasianwidth",
+      "version": "0.2.0",
+      "reason": "Original standalone copyright/permission notice absent; explicit published license declaration and standard terms supplied",
+      "metadata_only": false
+    },
+    {
+      "name": "https",
+      "version": "1.0.0",
+      "reason": "Original standalone copyright/permission notice absent; explicit published license declaration and standard terms supplied",
+      "metadata_only": true
+    },
+    {
+      "name": "@npmcli/agent",
+      "version": "4.0.0",
+      "reason": "Original standalone copyright/permission notice absent; explicit published license declaration and standard terms supplied",
+      "metadata_only": false
+    },
+    {
+      "name": "cobble",
+      "version": "0.1.4",
+      "reason": "Tagged README explicitly links BSD-2-Clause but has no copyright line; standard terms supplied without inventing one"
+    },
+    {
+      "name": "bun-types",
+      "version": "1.3.14",
+      "reason": "Original standalone copyright/permission notice absent; explicit published license declaration and standard terms supplied",
+      "metadata_only": false
+    }
+  ],
+  "bun_relinking_validation": "Pinned Bun and WebKit fork source/build material is supplied. A complete offline or byte-identical Bun rebuild/relink was not performed in this audit."
 }

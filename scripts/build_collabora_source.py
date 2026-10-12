@@ -57,16 +57,27 @@ def unpack(archive: Path, destination: Path):
 
 def prepare(project: Path, recipe: dict, work: Path):
     source = work / "online"
-    if not (source / ".git").is_dir():
-        run(["git", "clone", "--depth=1", "--filter=blob:none", "--sparse", "--branch",
-             recipe["source"]["ref"], recipe["source"]["repository"], source])
-    actual = run(["git", "rev-parse", "HEAD"], cwd=source, capture=True).stdout.strip()
-    if actual != recipe["source"]["commit"]:
-        raise ValueError("Source checkout does not match the pinned commit")
-    patterns = recipe["source"]["sparse_patterns"]
-    sparse_file = source / ".git/info/sparse-checkout"
-    if not sparse_file.is_file() or sparse_file.read_text().splitlines() != patterns:
-        run(["git", "sparse-checkout", "set", "--no-cone", *patterns], cwd=source)
+    details = recipe["source"]
+    archive = work / "upstream.tar.gz"
+    download(details["archive_url"], archive, details["archive_sha256"])
+    receipt = source / ".source-archive-sha256"
+    if not receipt.is_file() or receipt.read_text().strip() != details["archive_sha256"]:
+        source.mkdir(parents=True, exist_ok=True)
+        with tarfile.open(archive) as stream:
+            for member in stream:
+                parts = Path(member.name).parts[1:]
+                if not parts:
+                    continue
+                relative = Path(*parts).as_posix()
+                if parts[0] == "engine" and not any(
+                        relative == "engine/" + name or relative.startswith("engine/" + name + "/")
+                        for name in details["archive_engine_directories"]):
+                    continue
+                member.name = relative
+                stream.extract(member, source, filter="data")
+        receipt.write_text(details["archive_sha256"] + "\n")
+    # Supported upstream tarball-build mechanism; no private Git history needed.
+    (source / "dist_git_hash").write_text(details["commit"][:details["version_hash_length"]] + "\n")
     for component, filename in (("node", "node.tar.xz"), ("poco", "poco.tar.bz2")):
         details = recipe[component]
         download(details["url"], work / filename, details["sha256"])
@@ -231,7 +242,8 @@ def package(project: Path, recipe: dict, work: Path):
         if asset.suffix not in {".js", ".css"}:
             continue
         contents = asset.read_text(encoding="utf-8")
-        for key, value in {"PRODUCT_NAME": product["product_name"], "PRIMARY_COLOR": product["primary_color"]}.items():
+        for key, value in {"PRODUCT_NAME": json.dumps(product["product_name"], ensure_ascii=True)[1:-1],
+                           "PRIMARY_COLOR": product["primary_color"]}.items():
             contents = contents.replace("{{" + key + "}}", value)
         (brand_target / asset.name).write_text(contents, encoding="utf-8")
     provenance = {"source": recipe["source"], "package": settings,
@@ -266,7 +278,13 @@ def package(project: Path, recipe: dict, work: Path):
                 "source_url": recipe["branding"]["source_url"], "configure_arguments": recipe["configure_arguments"],
                 "files": [{"path": name, "sha256": sha256(output / name), "bytes": (output / name).stat().st_size}],
                 "executable_sha256": sha256(stage / "usr/bin/coolwsd"),
-                "poco": recipe["poco"], "engine": recipe["engine"], "upstream_packages": upstream}
+                "poco": recipe["poco"], "engine": recipe["engine"], "upstream_packages": upstream,
+                "package_notice_files": [{"path": "/" + path.relative_to(stage).as_posix(), "sha256": sha256(path)}
+                                         for path in sorted(document_dir.rglob("*")) if path.is_file()]}
+    engine_location = engine_root / recipe["engine"]["runtime_path"].lstrip("/")
+    manifest["engine_notice_files"] = [{"path": recipe["engine"]["runtime_path"] + "/" + path.name,
+                                       "sha256": sha256(path)} for path in sorted(engine_location.iterdir())
+                                      if path.name in {"LICENSE", "LICENSE.html", "NOTICE"} or path.name.endswith("-sbom.spdx.json")]
     (output / recipe["output"]["manifest_name"]).write_text(json.dumps(manifest, indent=2) + "\n")
     return output
 
@@ -296,6 +314,10 @@ def build_image(project: Path, recipe: dict, work: Path):
          "--build-arg", f"SOURCE_REVISION={recipe['source']['commit']}", "-t", image["tag"], context])
     manifest["image"] = {"tag": image["tag"], "id": run(["docker", "image", "inspect", "--format",
                          "{{.Id}}", image["tag"]], capture=True).stdout.strip()}
+    installed = run(["docker", "run", "--rm", "--entrypoint", "dpkg-query", image["tag"],
+                     "-W", "-f=${binary:Package}\t${Version}\n"], capture=True).stdout
+    manifest["image"]["packages"] = [{"name": line.split("\t")[0], "version": line.split("\t")[1]}
+                                      for line in installed.splitlines()]
     (output / recipe["output"]["manifest_name"]).write_text(json.dumps(manifest, indent=2) + "\n")
 
 

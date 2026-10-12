@@ -6,9 +6,10 @@
     "commit": "22ce52fb5173821dd90782638afcbfb6b6d7cb40",
     "archive_url": "https://github.com/CollaboraOnline/online.mirror/archive/22ce52fb5173821dd90782638afcbfb6b6d7cb40.tar.gz",
     "archive_sha256": "534f4390c473744f4809e36775d711fd9df6e0c872e5190bf5af8f72b008d1dd",
+    "version_hash_length": 10,
+    "archive_engine_directories": ["include/COKit", "officecfg", "distro-configs"],
     "license": "MPL-2.0",
-    "include_path": "engine/include",
-    "sparse_patterns": ["/*", "!/engine/", "/engine/", "!/engine/*", "/engine/include/", "!/engine/include/*", "/engine/include/COKit/", "/engine/officecfg/", "/engine/distro-configs/", "/engine/translations/", "!/engine/translations/*", "/engine/translations/source/", "!/engine/translations/source/*", "/engine/translations/source/zh-CN/"]
+    "include_path": "engine/include"
   },
   "parallel_jobs": 8,
   "build_id": 1,

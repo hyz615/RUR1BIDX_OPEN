@@ -3,13 +3,13 @@
   "files": [
     {
       "path": "README.md",
-      "sha256": "5b36789de9433dfdf60a21dbf278c846a8c38f545c13d9f3796be601fe44002b",
+      "sha256": "aa6f5f6aa74a7ad13cce0b97be77d583a79eac3d0c3278ab9b1b3be48c541451",
       "license": "Apache-2.0",
       "origin": "RUR1 source-disclosure tooling"
     },
     {
       "path": "BUILDING.md",
-      "sha256": "98db900f4d4584fbba8bee3f871efc39a53d8d9b6b3d8ff0ac1d6b87d4301fef",
+      "sha256": "3cdf886e0641cca876468f99d6ad8f0baeffc12dc4f1dc74334f7cbc0004272b",
       "license": "Apache-2.0",
       "origin": "RUR1 source-disclosure tooling"
     },
@@ -21,7 +21,7 @@
     },
     {
       "path": "fetch_sources.py",
-      "sha256": "87bd18bd0cb95971bd2a7a13823707df081a44b902bbda13d0e2cddccc288c16",
+      "sha256": "8ab7ffd51ee7ee3d1106cd451b1a0f27922483f4ff8e2661d56281fdf8184cae",
       "license": "Apache-2.0",
       "origin": "RUR1 source-disclosure tooling"
     },
@@ -50,32 +50,8 @@
       "origin": "Mozilla"
     },
     {
-      "path": "components/sandbox-helpers/spec-guard.c",
-      "sha256": "ac424557f0ec912dd11f7d320578b77c7d2e08ed36f57df626af6b3a551b018e",
-      "license": "Apache-2.0",
-      "origin": "LibreChat Code Interpreter and RUR1 modifications"
-    },
-    {
-      "path": "components/sandbox-helpers/rootfs-setup.c",
-      "sha256": "52d922acb9af7c8b6fed45a29555e1fcd41de59d3429548b7b829ea0410308bb",
-      "license": "Apache-2.0",
-      "origin": "LibreChat Code Interpreter and RUR1 modifications"
-    },
-    {
-      "path": "components/sandbox-helpers/LICENSE",
-      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
-      "license": "Apache-2.0",
-      "origin": "LibreChat Code Interpreter"
-    },
-    {
-      "path": "components/sandbox-helpers/NOTICE",
-      "sha256": "6a00300c8c584f827b2099234733f5a7322b7a725bb133077aaef7c1d47b908f",
-      "license": "Apache-2.0",
-      "origin": "LibreChat Code Interpreter"
-    },
-    {
       "path": "config/collabora_build.json",
-      "sha256": "fae7b482cee6491cc7a7043abe71a894d3f836e063f7e72498a5c09e3d5be51a",
+      "sha256": "49816e633e4a4319dd3d61d045b6c66b3b67a933dad8ad2aae68ff85a93a7ef7",
       "license": "MPL-2.0",
       "origin": "RUR1 Collabora corresponding-source build"
     },
@@ -87,7 +63,7 @@
     },
     {
       "path": "scripts/build_collabora_source.py",
-      "sha256": "8ceaba2e041893e086d0b818c1e584e59af79f99ac5fab72d2cd6bc26f49593f",
+      "sha256": "b0b1af302adb53995c64f90e1fd513dfaf16bdf4499183045eaf0cde4af9d9fb",
       "license": "MPL-2.0",
       "origin": "RUR1 Collabora corresponding-source build"
     },
@@ -117,7 +93,7 @@
     },
     {
       "path": "tools/collabora-open/verify_wopi.mjs",
-      "sha256": "7b040a930db22948c9c5d71cdc524ae4ef8b3cbaceaa065af094e31c1ce2943e",
+      "sha256": "e3510d39184a8d0ecbe0284d1e38374bba0029e396eb8d7ddd4c66ea02996d6f",
       "license": "MPL-2.0",
       "origin": "RUR1 Collabora corresponding-source build"
     },
@@ -141,7 +117,7 @@
     },
     {
       "path": "inventories/runtime-packages.json",
-      "sha256": "06f579dd88e51d7ed3056be3b462c3626e9230cd90536b25e248f5d6194e4078",
+      "sha256": "93ad3cd4577c736882327f95e293492c37f259c3d0d13942e41dd82cef533853",
       "license": "Apache-2.0",
       "origin": "RUR1 source-disclosure tooling"
     },
@@ -273,7 +249,7 @@
     },
     {
       "path": "PUBLICATION_LIMITATIONS.json",
-      "sha256": "3af6b50dc0d6f7ff1a6ed31a932a09c32a9361482cdbe172e8670045b80e1aef",
+      "sha256": "be36e9d4d720d4ca73640d80cd2ad86880d4bfd22fcdf557673b678ef5be22fa",
       "license": "Apache-2.0",
       "origin": "Corresponding-source provenance audit"
     },
@@ -284,8 +260,278 @@
       "origin": "Preserve source publication hashes"
     },
     {
+      "path": "tools/collabora-open/catalog_engine_sources.py",
+      "sha256": "fd74e4ffe5a288844ecab2e1533b13d3c10b0f172a14052f46d166e8a9b1c620",
+      "license": "MPL-2.0",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "tools/collabora-open/verify_engine_abi.cpp",
+      "sha256": "9bb97765cef1602684ef51ed5e84bf5387eb0d41d85721c70878eb0ff75de321",
+      "license": "MPL-2.0",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/browser-LICENSE",
+      "sha256": "fe56f339cf099de8f2c7b64bf1504be3b15422b26f6562e8b978061d64626cbc",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/online-THIRDPARTYLICENSES",
+      "sha256": "b42dcba3ecb04b2e42e0784fbb22af30a0dd223a1847ada80e148d859d3adedf",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-COMPONENTS.json",
+      "sha256": "b8c116c1ed52dc00eef03eb7910c1835a12041d78cb2a64339ab13441a1611cd",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/poco/LICENSE",
+      "sha256": "c4b1e1e5f36d8331737231fefcc30f5714326aec7c387ad59a8115eb0ba7d6b5",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/dompurify/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/dompurify/LICENSE-MPL",
+      "sha256": "fab3dd6bdab226f1c08630b1dd917e11fcb4ec5e1e020e2c16f83a0a13863e85",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/fzstd/LICENSE",
+      "sha256": "62249119bb7df6e54300f37a37145c26a6d4420410aac8881a119c5b427cf751",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/gl-matrix/LICENSE.md",
+      "sha256": "af62d31a0cdc1bf95d5e19428c3e0de368b727d9d5b6b6cdb466f8a52e68ad06",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/hammerjs/LICENSE.md",
+      "sha256": "4d93df6544df47a49b25add3aff67ff9ff47e4756d85dd0c3e1beba8520ab9f2",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/jquery/LICENSE.txt",
+      "sha256": "1ff603118efdb313799567cb4a408594954384f40843ca6f29c596f5b1f8907d",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/jquery-ui/LICENSE.txt",
+      "sha256": "de33fb695880d0b07615d4b86f78cd43796906959ade5fdfef70968827a0db78",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/marked/LICENSE.md",
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/npm/smartmenus/LICENSE-MIT",
+      "sha256": "a46a8c1e4f4d6fa26a60dc8c08e2c49c7a7176865c379ff481d82fe932939568",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/poco/CppUnit/doc/license.htm",
+      "sha256": "e9bc8e77c850411699f3f13e26308aeb0b71afec5c2351f5eef9ac9cf4eeab4c",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/poco/Data/SQLParser/LICENSE",
+      "sha256": "78d6aae5a0b19bb74746864066ab6829530b0c015b8319f89579d4f6cce6bc76",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/poco/dependencies/cpptrace/LICENSE",
+      "sha256": "8ac69cb836d165edd51212074441c1794b1f6712783d59014b773eeed133d4d3",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "evidence/collabora/server-dependency-licenses/poco/dependencies/quill/LICENSE",
+      "sha256": "12e9bec945430d98b20939e3115284e80965f56d73348e5688cd8b7452aac146",
+      "license": "Original component licenses",
+      "origin": "Collabora corresponding-source build and license evidence"
+    },
+    {
+      "path": "components/sandbox-helpers/build-config.json",
+      "sha256": "42ee1cb2afffb7d29f7d86ed437f9eaf04387e3b6f476c09059c380de082764a",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/build-static-helpers.py",
+      "sha256": "37f21d6c2c70de1cfc193bf0442c0e7d292887d668d0a42ab7a09ed22cf8a174",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/BUILD.json",
+      "sha256": "7cae7c5d4dad1a0961630d76fdb9366b05929665a42e989aeb21ed6b36d90924",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/Artistic",
+      "sha256": "b7fd9b73ea99602016a326e0b62e6646060d18febdd065ceca8bb482208c3d88",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/GFDL-1.2",
+      "sha256": "d8e94ae5fdb5433fcae2961aeb1a8cf17174d6f4a0465d24bf37dd8a038bd439",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/GPL-2",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/GPL-3",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/LGPL-2.1",
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/LGPL-3",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/libc6-dev_amd64.txt",
+      "sha256": "40c7e1f2118531f038ca22999bd976901254e1bc5cd1b0f0211bdd064c599987",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/library-licenses/libgcc-12-dev_amd64.txt",
+      "sha256": "da8191658b3452ce9caf31638ba61dab31a38c619fa39df119812e050f592fd3",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/LICENSE",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/NOTICE",
+      "sha256": "6a00300c8c584f827b2099234733f5a7322b7a725bb133077aaef7c1d47b908f",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/REBUILD.txt",
+      "sha256": "26f74de0890ab2d061ff4dddd0a4efc92e3140bfb75edd9ad003c8e5441c586d",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/sources/api/src/spec-guard.c",
+      "sha256": "ac424557f0ec912dd11f7d320578b77c7d2e08ed36f57df626af6b3a551b018e",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "components/sandbox-helpers/sources/docker/rootfs-setup.c",
+      "sha256": "52d922acb9af7c8b6fed45a29555e1fcd41de59d3429548b7b829ea0410308bb",
+      "license": "Original component licenses",
+      "origin": "Verified static-helper relinking disclosure"
+    },
+    {
+      "path": "evidence/bun/1.3.14/JavaScriptCore-COPYING.LIB",
+      "sha256": "5094ecb9c9dcd0eadc34f3c11511d9b5535063032bc150164ecd1a5d5a445547",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.3.14/LGPL-RELINKING-NOTICE.txt",
+      "sha256": "be8664f6ca33743b0ec8e0208a54c144748b82d113f1cdd16651b44a249b03da",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.3.14/LICENSE.md",
+      "sha256": "2c6160ec8fb853f7e8f97d9b249e756c9b0ac44860a68b6bf4f1b0bcbc5c3741",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.3.14/THIRD-PARTY-NOTICES.md",
+      "sha256": "ba5b723e602dd716e65395e30b28397f05400632039b469a70b7ad054b39b82d",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.4.2/JavaScriptCore-COPYING.LIB",
+      "sha256": "5094ecb9c9dcd0eadc34f3c11511d9b5535063032bc150164ecd1a5d5a445547",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.4.2/LGPL-RELINKING-NOTICE.txt",
+      "sha256": "e0e98e5f767e2c7e5cf8dde60fd1b702fbbd201cfe98e820857919f2f1803ece",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.4.2/LICENSE.md",
+      "sha256": "b9caf52728691b4057e371232c221a132883198be2f3d2ddf92c90404c984b1a",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/1.4.2/THIRD-PARTY-NOTICES.md",
+      "sha256": "40ea6414ebb81297d00372174d6c4b512c57a0fa97a6c147fab36f904e032f00",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/MIT-standard-terms.txt",
+      "sha256": "508a77d2e7b51d98adeed32648ad124b7b30241a8e70b2e72c99f92d8e5874d1",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
+      "path": "evidence/bun/SOURCES.json",
+      "sha256": "c3cc8459f6d6f88784e3c5f83d443f10e66eb946f329387dd31a2a727df6e4e4",
+      "license": "Original component licenses",
+      "origin": "Pinned Bun and WebKit original license records"
+    },
+    {
       "path": "source-catalog.json",
-      "sha256": "755483c347557e3c99ebbb654414453ab9858e0bebdec3a11eb521ec7e05fc98",
+      "sha256": "9cec0af005ca611295e2e183d3440d381a714af36f71a0bb1784cb191cb95a0c",
       "license": "Apache-2.0",
       "origin": "source inventory"
     }
