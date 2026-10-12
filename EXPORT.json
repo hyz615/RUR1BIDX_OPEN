@@ -111,7 +111,7 @@
     },
     {
       "path": "tools/collabora-open/README.md",
-      "sha256": "f5e8217caef9f2cb9295101bfdc0ba2ef2709af857f523a788cc1ece6421634c",
+      "sha256": "f4c125d2154c8a5cbf8012d69d19a32fc7f520d0b64e9b527cec4c3c61f47a86",
       "license": "MPL-2.0",
       "origin": "RUR1 Collabora corresponding-source build"
     },
@@ -276,6 +276,12 @@
       "sha256": "3af6b50dc0d6f7ff1a6ed31a932a09c32a9361482cdbe172e8670045b80e1aef",
       "license": "Apache-2.0",
       "origin": "Corresponding-source provenance audit"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "8035899516a354455582fc896c7de983f503fd2694d31fd769eceacaf1c33ab2",
+      "license": "Apache-2.0",
+      "origin": "Preserve source publication hashes"
     },
     {
       "path": "source-catalog.json",

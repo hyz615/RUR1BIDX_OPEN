@@ -18,6 +18,17 @@ pkg-config, libcap/libpam/libpng/libssl/libzstd development headers, Python poli
 and lxml, dpkg-dev, fontconfig and Docker Engine. Build logs and all source caches
 should be retained in the working directory. `parallel_jobs` is configurable.
 
+The pinned upstream server uses the engine's gbuild, but does not link the engine
+into the server. `gbuild_to_cmake.py` reads the upstream target and translation-unit
+lists and builds the same server boundaries using the public COKit headers. It
+retains POCO's whole-archive factory registrations and the upstream install rules.
+The packaged core uses libstdc++'s old string ABI. The recipe therefore applies
+`_GLIBCXX_USE_CXX11_ABI=0` consistently to POCO and the server. The standalone
+`verify_engine_abi.cpp` checks this boundary through upstream `cok_preinit_2` and
+the returned `std::string`; `verify_wopi.mjs` checks a real DOCX load, insertion,
+WOPI PutFile and the inserted text in the resulting document. Do not accept a
+discovery response alone as proof of engine compatibility.
+
 The engine packages are reused from the matching verified dependency bundle.
 Their `program/versionrc` build ID must match the source commit. Upstream's
 `docker/README` at that commit explicitly documents a "100% open source" build
@@ -44,3 +55,12 @@ Publish the exact monorepo source archive, the POCO source archive and these bui
 files and original brand assets under the source release recorded in the build
 manifest. Include all applicable upstream licenses and notices. `RUR1BIDX_OPEN`
 contains only these covered components and build materials, not RVX business code.
+
+The monorepo source archive does not contain every external source tarball used
+by the engine. `catalog_engine_sources.py` reads the actual packaged engine SPDX
+files and preserves their source URLs, SHA256 hashes, license expressions and
+evidence. Fetch required tarballs separately and apply the matching
+`engine/external` build rules and patches. Preserve the core's complete LICENSE,
+NOTICE and SBOM files. The custom server's `COMPONENTS.json` records its real
+static POCO source, shipped npm packages and ELF shared-library dependencies; it
+does not impersonate an engine gbuild SBOM.
