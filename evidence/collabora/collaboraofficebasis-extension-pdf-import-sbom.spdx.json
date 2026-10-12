@@ -1,0 +1,264 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:1010cb92-8ccf-4383-bece-9bd6cf587916",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-extension-pdf-import",
+      "rootElement": [
+        "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-extension-pdf-import",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0f908347-afa1-44bd-b284-388dad38c2a2",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1010cb92-8ccf-4383-bece-9bd6cf587916",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:598bc49a-6d2f-4853-9333-0ecf849f9b60",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:97109316-70f8-48ce-bd20-9ac376c93246",
+      "name": "program/libpdfimportlo.so",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "6aa3335a38ad7a0bfd0da4202de388552a48adc253fa25e9a8036acaa51244c0a673b7f3fbd37f34638c624478b8972683cb8fbb520c34360e18971987f88786",
+          "software_additionalPurpose": [
+            "executable"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:97109316-70f8-48ce-bd20-9ac376c93246"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:97109316-70f8-48ce-bd20-9ac376c93246",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:8f0c04bb-cd09-4173-9c03-254cd94f1978",
+        "urn:uuid:a684c0e2-404c-4c19-9ea7-7a74c7940670"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "boost",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:boost:boost:1.91.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "http://www.boost.org/",
+      "software_packageVersion": "1.91.0"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:89d79391-57d8-4724-830f-61ad276704a9",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/boost_1_91_0.tar.xz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "2f975c10da79511c2f218189fc8a12eef1a92e3bd18206e9841d406296d065eb"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:89d79391-57d8-4724-830f-61ad276704a9",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e22f7090-86f9-47e7-8128-466c0d70eaf9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:029e8432-5450-4230-b91f-4f8e3db4ecfe"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b08e45fb-e81d-41fc-94c8-139bb11e2750",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:382429a6-0c7c-43ef-b7c2-b3646b726281",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3582a00a-99fb-4e06-a0e7-bbdef60c4352",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:029e8432-5450-4230-b91f-4f8e3db4ecfe",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "BSL-1.0"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:97109316-70f8-48ce-bd20-9ac376c93246",
+      "relationshipType": "contains",
+      "software_softwareLinkage": "static",
+      "to": [
+        "urn:uuid:4609d94d-0cb4-45a3-ae11-4dad91b7b1b5"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6b4b2690-c7bc-44f5-a23e-35a2dea063e6",
+      "creationInfo": "_:creationinfo",
+      "name": "libpthread.so.0",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6d843f51-4c12-4cd6-8b79-fe748a4175c0",
+      "creationInfo": "_:creationinfo",
+      "name": "libz.so.1",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:bd9339b6-4018-41c3-a97e-b45c36f69146",
+      "creationInfo": "_:creationinfo",
+      "name": "libgcc_s.so.1",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:495001f9-50e9-45d9-921e-16b99e10d3f3",
+      "creationInfo": "_:creationinfo",
+      "name": "libc.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:b8369cf9-37ac-4e11-9ab3-b1f95f32c5cc",
+      "creationInfo": "_:creationinfo",
+      "name": "libstdc++.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:5db3b2d9-d20c-4e2a-9c3e-407acb87e919",
+      "creationInfo": "_:creationinfo",
+      "name": "libm.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:97109316-70f8-48ce-bd20-9ac376c93246",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:6b4b2690-c7bc-44f5-a23e-35a2dea063e6",
+        "urn:uuid:6d843f51-4c12-4cd6-8b79-fe748a4175c0",
+        "urn:uuid:bd9339b6-4018-41c3-a97e-b45c36f69146",
+        "urn:uuid:495001f9-50e9-45d9-921e-16b99e10d3f3",
+        "urn:uuid:b8369cf9-37ac-4e11-9ab3-b1f95f32c5cc",
+        "urn:uuid:5db3b2d9-d20c-4e2a-9c3e-407acb87e919"
+      ],
+      "completeness": "noAssertion"
+    }
+  ]
+}

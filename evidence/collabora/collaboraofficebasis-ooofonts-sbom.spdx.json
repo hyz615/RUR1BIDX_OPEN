@@ -1,0 +1,4135 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:db0aa7a0-df30-49b6-b160-234f5d8c6bd1",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-ooofonts",
+      "rootElement": [
+        "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-ooofonts",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:238c3065-df30-4e7b-8c7f-245b8daab07c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:db0aa7a0-df30-49b6-b160-234f5d8c6bd1",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:d9b25f05-d49c-47a4-8e39-d335b467720c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:797b5378-8d5f-4276-9ccb-d68df4529c81",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Gentium",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Gentium:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:22fa531f-f252-4fdf-9d8f-9b902ed8ceca",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/1725634df4bb3dcb1b2c91a6175f8789-GentiumBasic_1102.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "2f1a2c5491d7305dffd3520c6375d2f3e14931ee35c6d8ae1e8f098bf1a7b3cc"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:22fa531f-f252-4fdf-9d8f-9b902ed8ceca",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:797b5378-8d5f-4276-9ccb-d68df4529c81"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2168db3b-a5bc-4e5b-a102-fa13f4852e14",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:797b5378-8d5f-4276-9ccb-d68df4529c81",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f705afcc-15b9-4feb-a009-4b6cb6899742",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:797b5378-8d5f-4276-9ccb-d68df4529c81",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:8dcdd147-21ab-4450-95a1-5ae35c4aa9a9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:797b5378-8d5f-4276-9ccb-d68df4529c81"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "OFL-1.1"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:22b07141-5847-4814-b28e-a342a543da30",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansLao",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansLao:2.003:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.003"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:1836078e-6644-425b-8927-a729d2207b6a",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansLao-v2.003.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "5a87c31b1a40ef8147c1e84437e5f0ceba2d4dbbfc0b56a65821ad29870da8c0"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1836078e-6644-425b-8927-a729d2207b6a",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:22b07141-5847-4814-b28e-a342a543da30"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:7c10a501-2998-475b-a681-74b54cd2d65d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:22b07141-5847-4814-b28e-a342a543da30",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:29f204eb-81f9-4799-9729-cb28fe4dfd9c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:22b07141-5847-4814-b28e-a342a543da30",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4c6e419b-03e5-4af6-912b-727f64d3e3f3",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:22b07141-5847-4814-b28e-a342a543da30"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:10f8d1f4-b470-4708-a05e-32e755b734a1",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansArmenian",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansArmenian:2.008:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.008"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:545e0530-5b6e-4bdf-8c8f-3d57cf80f1a4",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansArmenian-v2.008.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "eab89b99e134177ca6a3f9f0412a7cb812aafceb13175d686b4c45cb237f64ac"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:545e0530-5b6e-4bdf-8c8f-3d57cf80f1a4",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:10f8d1f4-b470-4708-a05e-32e755b734a1"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:fb73aa80-54b3-4a42-8d85-7475fedcb4d3",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:10f8d1f4-b470-4708-a05e-32e755b734a1",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:dc5a1c94-71f1-49be-8f73-a815ebe08873",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:10f8d1f4-b470-4708-a05e-32e755b734a1",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:efadeebc-2761-411b-beb7-7d116f4c8ca7",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:10f8d1f4-b470-4708-a05e-32e755b734a1"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:c1b46057-eb7d-4aeb-a32c-e0f214540da4",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Caladea",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Caladea:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:01ca8aa1-91d2-47e5-a148-ef068cba8a4e",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/368f114c078f94214a308a74c7e991bc-crosextrafonts-20130214.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "c48d1c2fd613c9c06c959c34da7b8388059e2408d2bb19845dc3ed35f76e4d09"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:01ca8aa1-91d2-47e5-a148-ef068cba8a4e",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:c1b46057-eb7d-4aeb-a32c-e0f214540da4"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:381389ca-643d-411a-a948-962c26055ea7",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:c1b46057-eb7d-4aeb-a32c-e0f214540da4",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:8f44e054-1955-40aa-bda2-9e676d2bc3f2"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ad5503d7-e56d-4cd7-aae5-0e7597833dc1",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:c1b46057-eb7d-4aeb-a32c-e0f214540da4",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b8302ca1-dcf8-4a84-a6ba-5cc3ebdc93e2",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:c1b46057-eb7d-4aeb-a32c-e0f214540da4"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:8f44e054-1955-40aa-bda2-9e676d2bc3f2",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "Apache-2.0"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:a34c1d6f-3ffb-43a5-afd1-a595c2e91dc5",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Bacasime",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Bacasime:2.000:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/bacasime-antique-fonts",
+      "software_packageVersion": "2.000"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:fd315c1a-10aa-41b4-b19c-613d8f84920b",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Bacasime_Antique-2.000.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "81127cebc97d4ee0b950c2bc2d6be0ed29abfe0d5988435eb9a39e382557250a"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:fd315c1a-10aa-41b4-b19c-613d8f84920b",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:a34c1d6f-3ffb-43a5-afd1-a595c2e91dc5"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:8380d776-83a8-4152-b516-5b905cbe3b5b",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:a34c1d6f-3ffb-43a5-afd1-a595c2e91dc5",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ff391bd9-d36b-4126-9ac0-302759cd9991",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:a34c1d6f-3ffb-43a5-afd1-a595c2e91dc5",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:299713e4-67a1-447a-bac4-9b973eb56986",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:a34c1d6f-3ffb-43a5-afd1-a595c2e91dc5"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:2eaa833f-41a8-486e-9bcf-5480b94f83c0",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Caprasimo",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Caprasimo:1.001:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/caprasimo-fonts",
+      "software_packageVersion": "1.001"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:f69dfcc7-077c-4fbb-b0bb-221a6cdaee3d",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Caprasimo-1.001.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "f066d27cfc99b6601083be102d08b4039da8d2834e2795aabd890f16c6fd1b9b"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f69dfcc7-077c-4fbb-b0bb-221a6cdaee3d",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:2eaa833f-41a8-486e-9bcf-5480b94f83c0"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6bb35f16-ead6-48cc-919e-81029493abdf",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:2eaa833f-41a8-486e-9bcf-5480b94f83c0",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f093128c-7c59-47be-812a-2ce68e6f816d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:2eaa833f-41a8-486e-9bcf-5480b94f83c0",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:35db61a9-3f13-439d-9690-dc7f048e0397",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:2eaa833f-41a8-486e-9bcf-5480b94f83c0"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:3403dd39-e111-48fa-a881-55a6ff5ee13e",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Lumanosimo",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Lumanosimo:1.010:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/lumanosimo-fonts",
+      "software_packageVersion": "1.010"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:7ec36fd6-4a00-4041-bd3f-ce5f85e7260e",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Lumanosimo-1.010.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "d4545ad6afded9a55d9a7728cfc7453cf5637861db87aafe0a730676a0cb960f"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:7ec36fd6-4a00-4041-bd3f-ce5f85e7260e",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:3403dd39-e111-48fa-a881-55a6ff5ee13e"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2c0ed58f-ed4e-4574-9dca-ba6856414447",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3403dd39-e111-48fa-a881-55a6ff5ee13e",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e4a69064-20d1-4371-a340-269a9cbdfb19",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3403dd39-e111-48fa-a881-55a6ff5ee13e",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:c23bb13e-8181-4ecb-86f8-c4e4fb543a08",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:3403dd39-e111-48fa-a881-55a6ff5ee13e"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansJp",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansJp:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:1b0d9139-6fa8-4986-a514-658290083cfe",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansJP.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "6886c5526628c08f1e21a84f4658ab3daf6d0233de8dc54526ccf9f40bfab18e"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1b0d9139-6fa8-4986-a514-658290083cfe",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:018bcff4-ce28-4763-8ec2-597961dabfbd",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:637d0087-8cf0-4db0-9deb-51609b0ca35d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:c8d42808-da4a-4a16-a149-700a689bd345",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:0e0d2f60-5107-44f2-8942-3cc2eabb7210",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerif",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerif:2.015:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.015"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:50c626f6-9d90-48ab-ae0a-b599b5880bf3",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerif-v2.015.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "0e9a43c8a4b94ac76f55069ed1d7385bbcaf6b99527a94deb5619e032b7e76c1"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:50c626f6-9d90-48ab-ae0a-b599b5880bf3",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:0e0d2f60-5107-44f2-8942-3cc2eabb7210"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6de85abd-8acc-405a-b20e-bc85863d16e8",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:0e0d2f60-5107-44f2-8942-3cc2eabb7210",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e7f43fd5-9ab3-45be-af4f-e542653477b1",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:0e0d2f60-5107-44f2-8942-3cc2eabb7210",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:718d16f8-ce2f-48a6-9d15-266ccd5ed574",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:0e0d2f60-5107-44f2-8942-3cc2eabb7210"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansSc",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansSc:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:a8611f2a-68f5-482e-808c-4967e339aa0c",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansSC.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "bee1af8c0722cfb3eb1b2fa91a7f3dc011dca231c25c8fcd9d9d544699ababf9"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:a8611f2a-68f5-482e-808c-4967e339aa0c",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0d4e3a73-1d63-431a-8ea2-67b25757f62e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:692f3135-1190-4c5b-b3dc-50ec6de48846",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f1465bd0-4081-4e95-b4cc-067ec6b4661c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifKr",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifKr:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:2768d932-65ff-4db3-8405-05ea61689a9f",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifKR.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "3c0d276fb05aaefbbca808b4f8c7b1520b4b4e7c0be46296d6e8a5e42f559f5c"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:2768d932-65ff-4db3-8405-05ea61689a9f",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:3cb341e6-9b26-44c2-9b99-79d69563725d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:3d515600-8c5f-4f41-a58e-178f5ba16c37",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:30967d2c-d2a0-4de8-96f8-a34314d68c92",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:4647fc77-a9a0-4c90-a276-6de8d3f97527",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSans",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSans:2.015:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.015"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:727d5781-4bb4-478b-8355-5f58af35e9a3",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSans-v2.015.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "0c34df072a3fa7efbb7cbf34950e1f971a4447cffe365d3a359e2d4089b958f5"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:727d5781-4bb4-478b-8355-5f58af35e9a3",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:4647fc77-a9a0-4c90-a276-6de8d3f97527"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:d6325ce3-6868-4ce1-b687-c80abad36e52",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:4647fc77-a9a0-4c90-a276-6de8d3f97527",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:69aab18d-e008-478f-a9e9-8aeca68f3634",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:4647fc77-a9a0-4c90-a276-6de8d3f97527",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:248affc8-3806-4198-8c08-7c0a5016152f",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:4647fc77-a9a0-4c90-a276-6de8d3f97527"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:9359f364-ba47-41fa-8176-8333489d01b6",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "LiberationNarrow",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:LiberationNarrow:1.07.6:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "1.07.6"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:8eaee1f3-419e-49bf-90a1-ca5a4442d40a",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/liberation-narrow-fonts-ttf-1.07.6.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "8879d89b5ff7b506c9fc28efc31a5c0b954bbe9333e66e5283d27d20a8519ea3"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:8eaee1f3-419e-49bf-90a1-ca5a4442d40a",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:9359f364-ba47-41fa-8176-8333489d01b6"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:312406fd-7b5a-494e-81ca-b1e5d63813d6",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9359f364-ba47-41fa-8176-8333489d01b6",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:767c705d-d358-48b0-91cd-aadeb091e19a",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9359f364-ba47-41fa-8176-8333489d01b6",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e68c1ecf-a74d-4e17-ae77-c64096366c4d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:9359f364-ba47-41fa-8176-8333489d01b6"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:e8d2bcf2-60be-4fde-85b7-6c8d66c3969d",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "LinuxLibertineG",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:LinuxLibertineG:*:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://www.numbertext.org/linux/"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:1d3fab05-fbab-477a-b389-9cf5ec237deb",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/e7a384790b13c29113e22e596ade9687-LinLibertineG-20120116.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "54adcb2bc8cac0927a647fbd9362f45eff48130ce6e2379dc3867643019e08c5"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1d3fab05-fbab-477a-b389-9cf5ec237deb",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:e8d2bcf2-60be-4fde-85b7-6c8d66c3969d"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:82877fdc-625d-4aab-91ff-3da37a515d21",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e8d2bcf2-60be-4fde-85b7-6c8d66c3969d",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:c557c5ab-4d63-49de-aafc-0a23d1225756"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:cdcd8f71-1cb9-481f-a066-d97a78d59875",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e8d2bcf2-60be-4fde-85b7-6c8d66c3969d",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:a4a5e77c-8f72-41ee-abd4-fccb121c892e"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:dc246ddf-32ff-4ec3-bf88-398c8439442c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:e8d2bcf2-60be-4fde-85b7-6c8d66c3969d"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:c557c5ab-4d63-49de-aafc-0a23d1225756",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "OFL-1.0 OR GPL-2.0"
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:a4a5e77c-8f72-41ee-abd4-fccb121c892e",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "OFL-1.0"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:66ce08f5-1649-46ce-bbef-348262ed974c",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Karla",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Karla:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:bfa072a1-1cde-494d-865b-ff7afa09a5ca",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/2024-09-19-karla-main.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "c64cdbc55389c1bfb320dcef41a19f156bad271a99bc9253be118564dbb738b5"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:bfa072a1-1cde-494d-865b-ff7afa09a5ca",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:66ce08f5-1649-46ce-bbef-348262ed974c"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:13bb41a3-29d8-4f44-aa6c-c1b1fb76555f",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:66ce08f5-1649-46ce-bbef-348262ed974c",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4329528a-ec69-4fa5-80fc-6fddbb4da13e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:66ce08f5-1649-46ce-bbef-348262ed974c",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:01ad5dea-afd4-4018-b5f2-fc7ac4c2758d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:66ce08f5-1649-46ce-bbef-348262ed974c"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:783cb3d7-7ad0-4342-bd19-9aec4e72b442",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansLisu",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansLisu:2.102:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.102"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:2e6cbcb6-cdf3-4e21-a47b-84e8affdcb6e",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansLisu-v2.102.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b12a1ff762680681b7ce4d98dd29a7f54d90f5bcadd10c955afc640a27b3a268"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:2e6cbcb6-cdf3-4e21-a47b-84e8affdcb6e",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:783cb3d7-7ad0-4342-bd19-9aec4e72b442"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f8391336-3d68-4522-8a19-93008ae4b610",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:783cb3d7-7ad0-4342-bd19-9aec4e72b442",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:879f560f-9133-4e24-b1e3-b22d3e96589f",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:783cb3d7-7ad0-4342-bd19-9aec4e72b442",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:77ee3e0e-26c7-4958-b816-ec4288a23c9d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:783cb3d7-7ad0-4342-bd19-9aec4e72b442"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifTc",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifTc:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:ba6dc0d3-1422-4767-80a1-2c42798b9fc3",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifTC.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "c33e04199f6d69056a6de0ebc5522dbe36e02f145208c71c9a4c803841151ad2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:ba6dc0d3-1422-4767-80a1-2c42798b9fc3",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e2ec6a9e-724a-445b-824b-8c7709d87d2e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4f1bc423-4d30-4a6b-95dd-7cb5d6b3c43e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b2e143a9-b7a3-4540-b9e6-70f5e4756dab",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6b4fa40b-2a19-4dbe-9654-fdb909758da9",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Agdasima",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Agdasima:2.002:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/agdasima-fonts",
+      "software_packageVersion": "2.002"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:1365392a-8ca9-4bd4-8720-4f2c24132a6e",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Agdasima-2.002.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b4c17499f8bc183320ffdcf1f8491c778dd68a237adc056dc08e1fcb2da488f3"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1365392a-8ca9-4bd4-8720-4f2c24132a6e",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:6b4fa40b-2a19-4dbe-9654-fdb909758da9"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:52664ae2-2726-4dc0-8110-f859ad91fd69",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6b4fa40b-2a19-4dbe-9654-fdb909758da9",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:5232f9ad-473f-4d1d-b4b1-10ece8f47d37",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6b4fa40b-2a19-4dbe-9654-fdb909758da9",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:7ba59a50-59c8-49b1-90c3-67c40357d1cc",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:6b4fa40b-2a19-4dbe-9654-fdb909758da9"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:f9b1bac1-4199-4fe4-9c14-3a5520d27555",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansArabic",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansArabic:2.010:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.010"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:16b29043-1bf6-4cdc-93f6-ae7cb6f04c6a",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansArabic-v2.010.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "a5a34ac1ea01d0d71c083f99440ebfb1f64224474a0d88bb7ef0e2f8d9a996d2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:16b29043-1bf6-4cdc-93f6-ae7cb6f04c6a",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:f9b1bac1-4199-4fe4-9c14-3a5520d27555"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:7905e309-9beb-417b-9556-376faf1f2416",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:f9b1bac1-4199-4fe4-9c14-3a5520d27555",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6e9b2c54-90c2-4639-8ab1-f513056725b5",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:f9b1bac1-4199-4fe4-9c14-3a5520d27555",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:7aa7e84c-5cc1-4f1e-9a0a-92f71ed6a7b6",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:f9b1bac1-4199-4fe4-9c14-3a5520d27555"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:779e178b-48c7-414c-a86e-68280f6329c2",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Amiri",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Amiri:1.001:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/aliftype/amiri/",
+      "software_packageVersion": "1.001"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:d79eccb5-02a6-4b57-825e-28be07a11d65",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Amiri-1.001.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "cae999a9fc5638cb69cf0812e8bca1437ef1ebbf094f8b3c5b3f0a3ea2ef8c3a"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:d79eccb5-02a6-4b57-825e-28be07a11d65",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:779e178b-48c7-414c-a86e-68280f6329c2"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:26f9db49-2719-44f3-b9fd-04598902b10a",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:779e178b-48c7-414c-a86e-68280f6329c2",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:5c363f26-e7c1-4bff-85c1-2280dd62276c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:779e178b-48c7-414c-a86e-68280f6329c2",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6f952c7c-8370-49ff-83c2-83409fa33feb",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:779e178b-48c7-414c-a86e-68280f6329c2"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansKr",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansKr:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:5771ba27-1457-4c68-90c2-3aa7eb5c9f04",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansKR.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "5147b755c29f16f82b706b1c7ff7982894fccbebcf99e6c5fb0d48c315604b98"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:5771ba27-1457-4c68-90c2-3aa7eb5c9f04",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:a9b4873d-c4e5-49b2-8e1f-1fead5815303",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:1736df4c-f043-4899-86db-7b860e4805ff",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:94611b1d-63f8-4e2f-a38b-dc02ec8f22db",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:8fc42f57-bc6a-47bc-b938-7bc96d87d01b",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "SourceSans",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:SourceSans:2.010:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.010"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:4b20265e-920a-4c5a-982c-982b70ac669f",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/edc4d741888bc0d38e32dbaa17149596-source-sans-pro-2.010R-ro-1.065R-it.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "e7bc9a1fec787a529e49f5a26b93dcdcf41506449dfc70f92cdef6d17eb6fb61"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:4b20265e-920a-4c5a-982c-982b70ac669f",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:8fc42f57-bc6a-47bc-b938-7bc96d87d01b"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:820ac1b5-9df9-406f-9781-fe8df6aff2e2",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8fc42f57-bc6a-47bc-b938-7bc96d87d01b",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6c85cfa1-cc9f-4ccf-941b-c6456711cf44",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8fc42f57-bc6a-47bc-b938-7bc96d87d01b",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e1512451-82cf-4fc2-95ce-9d0e810a8c7c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:8fc42f57-bc6a-47bc-b938-7bc96d87d01b"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "OpenDyslexic",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:OpenDyslexic:0.910.12-rc2-2019.10.17:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "0.910.12-rc2-2019.10.17"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:95dba896-3d41-4aec-9ae6-94edab0bb3de",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/opendyslexic-0.910.12-rc2-2019.10.17.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b92d7fcb9409f2bcfd23b65ac71647256eb49c429f4fbb1cc870381fc93eb486"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:95dba896-3d41-4aec-9ae6-94edab0bb3de",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:c8615fc3-fc09-4108-9396-86aa2f3d23bf",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:44135aed-5fff-404d-b31b-c7138c8a71c7",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:3612df1b-8c65-4a09-8d13-2168e0cacb23",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:db06e85b-8cd1-4a5c-a664-738ed08e7f27",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoKufiArabic",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoKufiArabic:2.110:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.110"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:2d243e87-180b-4120-bc33-613f4c2e61b8",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoKufiArabic-v2.110.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "34390882c196f032811f2a3db8982c1e839f69aae3e4c2c1fdd63203150690df"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:2d243e87-180b-4120-bc33-613f4c2e61b8",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:db06e85b-8cd1-4a5c-a664-738ed08e7f27"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e5121791-db60-46ae-93c3-ef9ad7ec7a79",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:db06e85b-8cd1-4a5c-a664-738ed08e7f27",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:29c65be3-e816-4852-bea4-80003054aeb1",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:db06e85b-8cd1-4a5c-a664-738ed08e7f27",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:a6252278-74a3-4289-9c4e-24d00869c04d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:db06e85b-8cd1-4a5c-a664-738ed08e7f27"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:b0ee2ac1-4016-4381-ae3b-71c655cd1a3c",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifGeorgian",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifGeorgian:2.003:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.003"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:16891ca2-f700-454d-8afa-47401bc2bf99",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifGeorgian-v2.003.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "cfb41a264b97d463bab6807a5be937ba4a6ddcfa93d519a21b98b0ba73ca27d4"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:16891ca2-f700-454d-8afa-47401bc2bf99",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:b0ee2ac1-4016-4381-ae3b-71c655cd1a3c"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4871edc2-065a-4337-88b2-6394798ec4c3",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:b0ee2ac1-4016-4381-ae3b-71c655cd1a3c",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b67c6824-3038-4112-a418-ec628382d322",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:b0ee2ac1-4016-4381-ae3b-71c655cd1a3c",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:66025760-3d18-49ad-8b86-7d266d9b2aef",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:b0ee2ac1-4016-4381-ae3b-71c655cd1a3c"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:1718c89e-f729-4b39-aa54-d0a6c3db2c77",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Lunasima",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Lunasima:2.009:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/lunasima-fonts",
+      "software_packageVersion": "2.009"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:1ca0e708-e24c-44e9-9d33-2ea1c91bb7d3",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Lunasima-2.009.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "4302809cf4b95b481bec53de87484d919b391c90a518d065f6c775fd435a5393"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1ca0e708-e24c-44e9-9d33-2ea1c91bb7d3",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:1718c89e-f729-4b39-aa54-d0a6c3db2c77"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:3c6e2371-690c-4f96-9978-5e2cfb74d9e5",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1718c89e-f729-4b39-aa54-d0a6c3db2c77",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:8ce1cf84-c641-42cd-9119-8ecfbf4864ec",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1718c89e-f729-4b39-aa54-d0a6c3db2c77",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4cc545c1-64b9-4cc0-afaa-c1d2d27948b5",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:1718c89e-f729-4b39-aa54-d0a6c3db2c77"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:a93f46e5-6bd1-469b-94eb-360d3aa07c77",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Reem_Kufi",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Reem_Kufi:2.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/aliftype/reem-kufi/",
+      "software_packageVersion": "2.0"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:3360cff4-302e-4975-960e-fa1a082bab49",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/ReemKufi-2.0.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "94ae468fd88f37011607f03466bfc3a03fb617682b7bac6419b70de94cac22f0"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3360cff4-302e-4975-960e-fa1a082bab49",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:a93f46e5-6bd1-469b-94eb-360d3aa07c77"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:df05cb89-a636-4ebb-ae8a-f93b6b1223e4",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:a93f46e5-6bd1-469b-94eb-360d3aa07c77",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:002e93e2-f85f-4553-97aa-942e3fe6af39",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:a93f46e5-6bd1-469b-94eb-360d3aa07c77",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:464cdd19-98b8-4aa0-ac94-0cfa47b16722",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:a93f46e5-6bd1-469b-94eb-360d3aa07c77"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:daea1fd3-aaad-44c8-a9fe-48c6786a73d7",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoNaskhArabic",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoNaskhArabic:2.021:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.021"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:adc3be99-b303-4cd3-924c-67e266147d5b",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoNaskhArabic-v2.021.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "6c050ab9bd087d69b733c505a7576e60c528c2f33cd7b91005a5bd7da4514032"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:adc3be99-b303-4cd3-924c-67e266147d5b",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:daea1fd3-aaad-44c8-a9fe-48c6786a73d7"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:62a58352-bd78-467f-a907-8e971d00d512",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:daea1fd3-aaad-44c8-a9fe-48c6786a73d7",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6a77e0ce-310d-4a34-8df1-745cca2d30d9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:daea1fd3-aaad-44c8-a9fe-48c6786a73d7",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:26affd70-39df-4041-aace-0fb39263c7f0",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:daea1fd3-aaad-44c8-a9fe-48c6786a73d7"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:8962329a-7068-492f-8543-d430125a9b4b",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifHebrew",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifHebrew:2.004:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.004"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:70137847-fcb9-4db7-8b7b-ab3d59349d24",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifHebrew-v2.004.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "99523f4f21051495f18cbd5169ed0d1e9b395eefe770fece1844a4a7a00c46da"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:70137847-fcb9-4db7-8b7b-ab3d59349d24",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:8962329a-7068-492f-8543-d430125a9b4b"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:194f861e-1981-4b06-b9b7-44f6c4ea80dc",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8962329a-7068-492f-8543-d430125a9b4b",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ffe9da64-b3fb-4921-8641-929973e5a13a",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8962329a-7068-492f-8543-d430125a9b4b",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4de25b12-7c73-440f-8551-9a7de2c8cc31",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:8962329a-7068-492f-8543-d430125a9b4b"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:808bc033-0883-44af-8d0c-62b0c3374fa8",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansHebrew",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansHebrew:3.001:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "3.001"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:a5e1fc02-1908-4875-8f95-f5ea3dd822f4",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansHebrew-v3.001.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "df0a71814b4e63644cf40fcc4529111b61266b7a2dafbe95068b29a7520cc3cb"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:a5e1fc02-1908-4875-8f95-f5ea3dd822f4",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:808bc033-0883-44af-8d0c-62b0c3374fa8"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0dcab1ac-46f7-4201-beff-7a32d9419be7",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:808bc033-0883-44af-8d0c-62b0c3374fa8",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:96d79057-f31b-454e-9f3f-78c2a47272e1",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:808bc033-0883-44af-8d0c-62b0c3374fa8",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2c44d4c0-6cb7-4b18-8b5c-ebff60c3df36",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:808bc033-0883-44af-8d0c-62b0c3374fa8"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifJp",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifJp:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:e48d728b-ef6f-4b92-bf2a-507cdfcf0dfc",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifJP.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "362438901cb871bf84b01ff4734c668dab57b4905f39e5ec76d8b68a7a7b5fa8"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:e48d728b-ef6f-4b92-bf2a-507cdfcf0dfc",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2ac1531b-24a1-4ea0-a24b-a4c97079b4c6",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e367edc9-d18f-4431-87b4-ddfe53e0cd0b",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4dea2f68-11df-479b-89be-6c8673fad0b5",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:5d4b91e1-f70b-46fb-a2a4-e3dcd6e158c6",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifLao",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifLao:2.003:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.003"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:34518771-3a3d-42a3-aa10-3c9903cb5927",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifLao-v2.003.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "e96a303d3347790b0ef3db274971a989a736ce766ec9ea1bea0e1458568a80b2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:34518771-3a3d-42a3-aa10-3c9903cb5927",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:5d4b91e1-f70b-46fb-a2a4-e3dcd6e158c6"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2f8a9a71-9d46-4f2a-b0c3-9a8b7a27e3a9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:5d4b91e1-f70b-46fb-a2a4-e3dcd6e158c6",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0069bb78-5739-4823-9c28-d2bed892397e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:5d4b91e1-f70b-46fb-a2a4-e3dcd6e158c6",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:8da591c9-ef53-4e07-8e5f-9cbe90873f6f",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:5d4b91e1-f70b-46fb-a2a4-e3dcd6e158c6"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:9e9386a0-3c8e-42c3-86d5-9e6087145eb3",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Alef",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Alef:1.001:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "1.001"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:0f227f00-71eb-4214-851d-a1730453e9bf",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/alef-1.001.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b98b67602a2c8880a1770f0b9e37c190f29a7e2ade5616784f0b89fbdb75bf52"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:0f227f00-71eb-4214-851d-a1730453e9bf",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:9e9386a0-3c8e-42c3-86d5-9e6087145eb3"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:02dc7152-8ba1-4405-a504-c42e569d1ee8",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9e9386a0-3c8e-42c3-86d5-9e6087145eb3",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f5171a86-403b-43ec-8cde-f743b0e0482a",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9e9386a0-3c8e-42c3-86d5-9e6087145eb3",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b83fc05a-5d3e-4c58-bc83-33ecc60d484e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:9e9386a0-3c8e-42c3-86d5-9e6087145eb3"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:e5064930-f6c1-4a0e-afe7-f40b3331310b",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansGeorgian",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansGeorgian:2.005:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.005"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:14c9de0f-4eb7-4d07-b055-9fac3861eca4",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansGeorgian-v2.005.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "10e85011008108308e6feab0408242acb07804da61ede3d3ff236461ae07ab1b"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:14c9de0f-4eb7-4d07-b055-9fac3861eca4",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:e5064930-f6c1-4a0e-afe7-f40b3331310b"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ddd7e7a2-9f9a-466c-9529-f3749d73ddc9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e5064930-f6c1-4a0e-afe7-f40b3331310b",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:88df598d-3792-440e-8e92-789aa6a4cf9e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e5064930-f6c1-4a0e-afe7-f40b3331310b",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:1f16daf4-e38e-4b6d-8fad-2c526b184297",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:e5064930-f6c1-4a0e-afe7-f40b3331310b"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:9a9f049f-341c-4357-bbce-120ff4d0e223",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Liberation",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Liberation:2.1.5:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.1.5"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:930b6cb8-78b2-4474-a1d5-b1b45f483865",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/liberation-fonts-ttf-2.1.5.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:930b6cb8-78b2-4474-a1d5-b1b45f483865",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:9a9f049f-341c-4357-bbce-120ff4d0e223"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:fe0e6bec-439e-45a0-8aed-eaf69e0b5939",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9a9f049f-341c-4357-bbce-120ff4d0e223",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ca8ea3dd-e66a-407e-8e36-81f44b316f0c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9a9f049f-341c-4357-bbce-120ff4d0e223",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b14d486a-af73-4638-b435-5ba77fe63e34",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:9a9f049f-341c-4357-bbce-120ff4d0e223"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:e25ef8bd-cd14-4125-8d15-44c5138d41d5",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Lugrasimo",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Lugrasimo:1.001:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/lugrasimo-fonts",
+      "software_packageVersion": "1.001"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:3074e213-4362-4282-ae19-748342357418",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Lugrasimo-1.001.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "db24dff31e8ddf6a113556c947a219f9534b072852e9ce2079a08c94854a7503"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3074e213-4362-4282-ae19-748342357418",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:e25ef8bd-cd14-4125-8d15-44c5138d41d5"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e8a631f0-c7e4-450c-9f9b-6cc0639e5728",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e25ef8bd-cd14-4125-8d15-44c5138d41d5",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e76d619f-b9be-4ff0-8938-6d808c49b3a1",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e25ef8bd-cd14-4125-8d15-44c5138d41d5",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:83cc0482-4816-4f05-862b-721b70f59e02",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:e25ef8bd-cd14-4125-8d15-44c5138d41d5"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:21488df1-c0f5-4529-a418-b62166bdd104",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "DejaVu",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:DejaVu:2.37:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.37"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:991cd8fc-5435-40eb-90be-326310fab1b1",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/33e1e61fab06a547851ed308b4ffef42-dejavu-fonts-ttf-2.37.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "7576310b219e04159d35ff61dd4a4ec4cdba4f35c00e002a136f00e96a908b0a"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:991cd8fc-5435-40eb-90be-326310fab1b1",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:21488df1-c0f5-4529-a418-b62166bdd104"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f15c5805-0243-4767-ad3c-24f5dbf56737",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:21488df1-c0f5-4529-a418-b62166bdd104",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:7cf4c7fa-a897-42e8-8964-5a4beef7a59d"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:ca608e73-f725-498a-8c3e-78d8022d7a6b",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:21488df1-c0f5-4529-a418-b62166bdd104",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:7cf4c7fa-a897-42e8-8964-5a4beef7a59d"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:3c1eebd6-fa94-4be2-8c88-9eea02676f10",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:21488df1-c0f5-4529-a418-b62166bdd104"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:7cf4c7fa-a897-42e8-8964-5a4beef7a59d",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "Bitstream-Vera"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:5669e2d8-97d2-4375-a268-39128096d48f",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "OpenSans",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:OpenSans:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:72e18452-7f3d-4ac5-9e82-5f3ad6718738",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Open_Sans.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "85d79a39d26acb207ba13fb1007189d55355a0faf2cf7ccfe6a2edf2abac06d9"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:72e18452-7f3d-4ac5-9e82-5f3ad6718738",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:5669e2d8-97d2-4375-a268-39128096d48f"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:a9ab6f9f-0c1f-4683-a839-1e428a7ae9ae",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:5669e2d8-97d2-4375-a268-39128096d48f",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0f14f90d-a6e2-4e07-9896-18a69d7bf570",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:5669e2d8-97d2-4375-a268-39128096d48f",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4b965102-650d-4095-a026-4a23ee64c270",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:5669e2d8-97d2-4375-a268-39128096d48f"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifSc",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifSc:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:9dca3910-cda9-4e68-8a9f-71677fba014f",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifSC.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "00ed5970680a82453619ac5952c5631ea138372bbb0f864d156d91a0fd9c8279"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9dca3910-cda9-4e68-8a9f-71677fba014f",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:c9ca01a1-5e10-478d-b2b5-7894e748c290",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:f5bc9afb-080e-495f-91c5-4976e52da28d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:32cc6b01-c103-44d1-b0e0-7b615f1e6cc3",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:e39b6d76-2986-48c2-86bf-b68f1934ac7b",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Carlito",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Carlito:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:e5684a0b-4a06-4eea-a50b-d9c3992e9fea",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/c74b7223abe75949b4af367942d96c7a-crosextrafonts-carlito-20130920.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "4bd12b6cbc321c1cf16da76e2c585c925ce956a08067ae6f6c64eff6ccfdaf5a"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:e5684a0b-4a06-4eea-a50b-d9c3992e9fea",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:e39b6d76-2986-48c2-86bf-b68f1934ac7b"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:1d75816f-a37e-4c41-b199-de9db423c410",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e39b6d76-2986-48c2-86bf-b68f1934ac7b",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:88be0ff0-7f52-4bda-996a-b889a7c0d2ce",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:e39b6d76-2986-48c2-86bf-b68f1934ac7b",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:04a0bb30-ac3e-4783-8e98-1f3ea95edd90",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:e39b6d76-2986-48c2-86bf-b68f1934ac7b"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:9afad0e0-098d-43d8-99b8-29df07c7f380",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Scheherazade",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Scheherazade:2.100:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.100"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:7bf4181b-2555-4e05-8c9a-2f259fb1a1fa",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Scheherazade-2.100.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "251c8817ceb87d9b661ce1d5b49e732a0116add10abc046be4b8ba5196e149b5"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:7bf4181b-2555-4e05-8c9a-2f259fb1a1fa",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:9afad0e0-098d-43d8-99b8-29df07c7f380"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:de00f8eb-09a7-4b05-8ddc-4f2feea03cd3",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9afad0e0-098d-43d8-99b8-29df07c7f380",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:472c9e4b-491f-4724-85c3-fcf0a24e2f0e",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9afad0e0-098d-43d8-99b8-29df07c7f380",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:132d3927-0c97-455a-afb2-9c0bac82c5fb",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:9afad0e0-098d-43d8-99b8-29df07c7f380"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSansTc",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSansTc:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:d83c08ea-833a-4ca2-8a0b-f8c5a7c9a180",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSansTC.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "ec9e8a4156593e1b3ff7cff843989f43f114f96eff0b5db9691ef3c2bdefb73e"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:d83c08ea-833a-4ca2-8a0b-f8c5a7c9a180",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:5339bc19-9b34-46e1-a229-a264cf219b63",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:37d3cd81-09bf-42b0-b2c0-cd480e3b844a",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:1e9f91ba-b204-4f72-84b4-a56935a56b17",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "LibreHebrew",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:LibreHebrew:1.0:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "1.0"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:7507b113-9a20-424e-9f69-489c5989ea55",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/libre-hebrew-1.0.tar.gz"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "f596257c1db706ce35795b18d7f66a4db99d427725f20e9384914b534142579a"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:7507b113-9a20-424e-9f69-489c5989ea55",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2f3053cf-b848-4ada-9d29-3a8f3678a4db",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:fc619eb6-7b24-43e8-9e55-995848fdef8c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:bb6e5c3d-12c7-44cc-997a-faeac3dea237",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:730d0210-38bf-4a95-87c1-d14ab13c4186",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "Belanosima",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:Belanosima:2.000:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_homePage": "https://github.com/docrepair-fonts/belanosima-fonts",
+      "software_packageVersion": "2.000"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:3f734c29-ce03-41af-a2e7-aa8a66279682",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Belanosima-2.000.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "9c30e9e7cdb0797b651113a77f6b789659b8d8598a466b2ba92754e9dec30449"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3f734c29-ce03-41af-a2e7-aa8a66279682",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:730d0210-38bf-4a95-87c1-d14ab13c4186"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:5cde06f4-3380-4977-9bbd-e7623dee0a10",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:730d0210-38bf-4a95-87c1-d14ab13c4186",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:8c263ee4-9112-457a-ad58-8542f91712d8",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:730d0210-38bf-4a95-87c1-d14ab13c4186",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:77a2c4fd-1a9c-487a-87dd-581f9eb70a2c",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:730d0210-38bf-4a95-87c1-d14ab13c4186"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:8ef3302f-921b-4b39-b6ee-0f0ccb174d68",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoSerifArmenian",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoSerifArmenian:2.008:*:*:*:*:*:*:*"
+        }
+      ],
+      "software_packageVersion": "2.008"
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:696559ec-b897-4222-89b1-172cd9c98845",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/NotoSerifArmenian-v2.008.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "b21c198a4c76ae598a304decefb3b5c2a4c2d4c3ae226728eff359185f291c6f"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:696559ec-b897-4222-89b1-172cd9c98845",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:8ef3302f-921b-4b39-b6ee-0f0ccb174d68"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:0863d477-1e26-48d4-9d75-8e21fe9acc47",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8ef3302f-921b-4b39-b6ee-0f0ccb174d68",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e79a6b77-bf3b-44fa-936c-ea1b77ceabb9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:8ef3302f-921b-4b39-b6ee-0f0ccb174d68",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:63f3abd9-24c9-4f04-9f9a-e15f974003d9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:8ef3302f-921b-4b39-b6ee-0f0ccb174d68"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6947230c-405a-464f-95cf-edd6f23de554",
+      "originatedBy": [
+        "https://collaboraoffice.com"
+      ],
+      "creationInfo": "_:creationinfo",
+      "name": "NotoMore",
+      "externalIdentifiers": [
+        {
+          "externalIdentifierType": "cpe23",
+          "identifier": "cpe:2.3:a:*:NotoMore:*:*:*:*:*:*:*:*"
+        }
+      ]
+    },
+    {
+      "type": "software_SoftwareArtifact",
+      "spdxId": "urn:uuid:cdd81b34-06e4-413d-99aa-943980b4b80e",
+      "software_primaryPurpose": "source",
+      "externalRef": [
+        {
+          "type": "ExternalRef",
+          "externalRefType": "SourceArtifact",
+          "locator": "https://gerrit.collaboraoffice.com/src/Noto-hinted.zip"
+        }
+      ],
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha256",
+          "hashValue": "837b4a9352fce32ad7f298fbf155af1da5b6f3f8dbd995eb63fdd8e82117e4ae"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:cdd81b34-06e4-413d-99aa-943980b4b80e",
+      "relationshipType": "generates",
+      "to": [
+        "urn:uuid:6947230c-405a-464f-95cf-edd6f23de554"
+      ],
+      "completeness": "complete"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:35048064-b765-47a5-aea1-7ec74fab1de7",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6947230c-405a-464f-95cf-edd6f23de554",
+      "relationshipType": "hasDeclaredLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2ec7fba3-7f10-4eec-ae97-3ae06266b0a9",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:6947230c-405a-464f-95cf-edd6f23de554",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:2641e7be-f060-4958-8816-39a522e3b3a8"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:6a222f05-c06a-41c5-9c02-2c2ff18bcd66",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:548ad788-cdea-4a0c-a8bf-712d19b1efe9",
+      "relationshipType": "contains",
+      "to": [
+        "urn:uuid:6947230c-405a-464f-95cf-edd6f23de554"
+      ]
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:feb80cfd-c23e-4acc-98d1-0989b330bdd2",
+      "name": "share/fonts/truetype/MiriamLibre-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "87ddd7cedae0d9f577e0f4313c84c98d053c55fa503a49e56f688726086ccc8d4023d23c947035607f2f790830e8d85f8ed77a17bc3abf32eebd529aac0ba760",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:feb80cfd-c23e-4acc-98d1-0989b330bdd2"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:e98b1c00-dc80-4aa6-91f2-2ab5c3181eef",
+      "name": "share/fonts/truetype/MiriamLibre-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "30213a25357c5dd18184e2dd39308403ec8ecaa2c5d91a666c9fdfe5300c3e0579f7e5068054b49b6e539f8166613ecbd2203033072d927cf3a0bef3d0f81af7",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:e98b1c00-dc80-4aa6-91f2-2ab5c3181eef"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:32bb58e2-a857-4bde-b799-0a0bc2e5062c",
+      "name": "share/fonts/truetype/FrankRuhlHofshi-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "5fd900cb8a7728a048a5f386851caa463cd18c6ab67d04e440462cdbd8c2272d7c23cb3d4c73f8c476a87bbef1b937f0326eefce3acd138f91bbc7af6829aa4d",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:32bb58e2-a857-4bde-b799-0a0bc2e5062c"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:b59dccc8-e054-4a8f-802f-4beafa0ac589",
+      "name": "share/fonts/truetype/FrankRuhlHofshi-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "2628257f67917d5032b6813d9d60fb466aae788590834ac03aac19e6f3cabfaf0996eddd75dd702b0d53ee0f60ec22aca877bddb762efb527e9113990e1181eb",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:512df75c-39f8-4361-aefa-fc619594d78e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:b59dccc8-e054-4a8f-802f-4beafa0ac589"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:76c80e17-cb7f-4948-976f-14fa74f91816",
+      "name": "share/fonts/truetype/OpenDyslexic-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "cf82c07917d26eaa797621243e665b70c41933b72ea86b4a386117174584e3538eeb08fdc01adb0904cb8d5ff9d0af85ca418482526b864143df0f496f05636a",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:76c80e17-cb7f-4948-976f-14fa74f91816"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:9cc65b19-8f7e-4ed2-81ac-2490188eb038",
+      "name": "share/fonts/truetype/OpenDyslexic-Bold-Italic.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "c58d699714f1be8afeaa6eab912d0ef44297b67c85dce73011af722af7c4fa8d499d8bb59acc9eaa8be40d5b2417883ea6a84a845d4594da6fa3c78b9bd79b2f",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:9cc65b19-8f7e-4ed2-81ac-2490188eb038"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:7f587761-87cb-47fe-aadd-2a3328046698",
+      "name": "share/fonts/truetype/OpenDyslexic-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "6e9a1e2fc079a9a3da4fa0e140a823c8bea9d39f937640dd4bd4a3c1f90fbf65a6e3218f979e85dc1e73de4f0ed45d78e50a5a55cc10f269430734a7b4451257",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:7f587761-87cb-47fe-aadd-2a3328046698"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:a5f97ec8-b77b-4e70-9450-a0e1abb3c886",
+      "name": "share/fonts/truetype/OpenDyslexic-Italic.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "336dd1d8bb14f50d60c0d98528b5179d186fec78ee0f19cf1e80bc9caa88f00ff470c5acba817ad8fcafad12d0762af96ad4357819024ea9c067811a178702f4",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f8d4d071-2d32-45c7-9cdd-dcb65e341eeb",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:a5f97ec8-b77b-4e70-9450-a0e1abb3c886"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:40764e72-2b4b-4da9-888b-05ad8305fc14",
+      "name": "share/fonts/truetype/NotoSansJP-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "570775a0dcb58b2afc31b443de2a19b0e037e8a8a686a9b07ba79c2b10d12bb73c9688d8204f338679a4de86967b74e8fadb2a58228c541db29ea68efbd305ea",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:40764e72-2b4b-4da9-888b-05ad8305fc14"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:7122a823-2491-4c23-8181-c7176b2de6b4",
+      "name": "share/fonts/truetype/NotoSansJP-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "6bbc16a547d9bd4d43fc90286b4f9b1b3cca45d0bd8a733b423cc92353968a9f3b9298c2efb8f4677757bc724c565206492fbbdaf3658a9fb21982a2bddced60",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:b6799546-bd8d-4933-9371-b2a9bd54d54e",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:7122a823-2491-4c23-8181-c7176b2de6b4"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:5428b8d7-70c2-4d84-894d-aaf6ad92662c",
+      "name": "share/fonts/truetype/NotoSansKR-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "6b7887bb75307e18d4801000cac0cd2037f7e108f98dc2c4c938850df683690b8dcf4ee929943d12581b0449e983b2d13469e372e27ea8331b2a8062333eaa9f",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:5428b8d7-70c2-4d84-894d-aaf6ad92662c"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:e0baf6a4-cd46-43b5-b244-d921bb35c8c3",
+      "name": "share/fonts/truetype/NotoSansKR-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "e0fb7f8fe37d887b4e9e3ec206a2c9db9ecb807388a7c6dccbbe5d8193ce9d76c00ed8b265478f833217eec4876026a6144242216d81c593ada2f37aeb9b8162",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:61951874-7c80-4f09-9350-12f640cf4f9f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:e0baf6a4-cd46-43b5-b244-d921bb35c8c3"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:4ac9cb07-7595-481f-b4f4-e696f8abfe71",
+      "name": "share/fonts/truetype/NotoSansSC-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "759fbb90f692dc505436510855187d2d745f694e41d009e627fc9d2ff47d39669ab369656bd6a0a15f88a6d387cae37963aea41016d99527e29e08ca085a9603",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:4ac9cb07-7595-481f-b4f4-e696f8abfe71"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:d020d6c6-be2b-4ac3-9271-28fa73eb4beb",
+      "name": "share/fonts/truetype/NotoSansSC-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "4d9c0379c6a770e54000ed4f3043a8055cdf5d997e3b35fa9469af13217d08c14b989b776cc0ef9f622544436fcde775e3445f3b7dbb80bf70f37267cd303cd6",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:0c322d8d-0984-465b-8d69-9564d2326502",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:d020d6c6-be2b-4ac3-9271-28fa73eb4beb"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:9dbcf9a9-4d45-442f-b8ed-33df298ed287",
+      "name": "share/fonts/truetype/NotoSansTC-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "e56dad1770bf04b94c80e157f91f4509cddddea02d832a2fedd37f705a41e026c7e4724182d1f24cffd975ef70732a154de25d55ff9ae72e462ac186b798ba25",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:9dbcf9a9-4d45-442f-b8ed-33df298ed287"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:029900e4-578d-4982-93b1-a03756e4a20e",
+      "name": "share/fonts/truetype/NotoSansTC-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "3f2c68ee7f221f3de99b9d0d8f508e9ea397a6f128f5501e7be6e0cf5eeef3d71dc70a74d09993cf6c0a426e857fda88ca4755ec6a472d63d327662b2581023c",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1db17d20-b41a-4227-931b-0274cd4f6cbc",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:029900e4-578d-4982-93b1-a03756e4a20e"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:3f84b4bf-a822-4e9e-a59c-58eb62e997c5",
+      "name": "share/fonts/truetype/NotoSerifJP-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "1acc554fc693e3456d06b202be262ed2708865f6bdda4487233f6ab6e8ef0ba8e326e221dcee5335a4defac74ec0a44e963a80489e6097716c4c139f947931d0",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:3f84b4bf-a822-4e9e-a59c-58eb62e997c5"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:fddbd3cd-9431-487d-8a2c-0d82a4881472",
+      "name": "share/fonts/truetype/NotoSerifJP-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "c8f6c33ca6edb1df4743297b353ed9db67d5b5368132a5c662e1b49b509632ff96a2f11a9093459ae184b5f6f9c99c85dcc620768488fc35b875637ab10fe738",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:6690a605-f6d0-47a9-862a-89fa0ea50162",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:fddbd3cd-9431-487d-8a2c-0d82a4881472"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:ed3181c1-645c-4d03-8767-d8235e3055d8",
+      "name": "share/fonts/truetype/NotoSerifKR-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "ac0134706ed5a2a4f469e27c70b88e461e5564e27f37591d1aa46ffc9c334edec51535a8777d4f2704e6e7088b9ea148438e71540c8cb560ff0d04524a1a5178",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:ed3181c1-645c-4d03-8767-d8235e3055d8"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:3f565b8f-3e56-4fc7-9ab5-ab0e84035e70",
+      "name": "share/fonts/truetype/NotoSerifKR-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "34a421b783d09178ea77efd4d53d2aaaa775c38392664139571e9cb635e95f1026837e3de2147a14adce79d5434f406f4d9e6c8a6dae591804633bfd6de154cb",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3555e792-af87-4ea9-be99-ac13c5b020de",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:3f565b8f-3e56-4fc7-9ab5-ab0e84035e70"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:222e574b-41fd-45a1-b824-9fcad2b32580",
+      "name": "share/fonts/truetype/NotoSerifSC-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "696b9d1699b6e9612fb1815c361777f726c17524a347371af268e5566612a5ddfc2125e924964e546c287ea03cfd4d5027c22f20587d5b4dc9d629d2e8ae57d4",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:222e574b-41fd-45a1-b824-9fcad2b32580"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:16f7b982-12a6-473e-b8af-5e197743b169",
+      "name": "share/fonts/truetype/NotoSerifSC-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "9a7a11e0d50ee15522cfa460a63b7e418faedd39cc92347847642ff55094691e31c8c519f3b318eab12855033c02f11cac03d140f46d2c2d700d91308c19a240",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:1e19a2a7-5572-47c0-aa55-ca641b110be9",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:16f7b982-12a6-473e-b8af-5e197743b169"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:af061cfc-d2fd-488b-b378-8487ce98a727",
+      "name": "share/fonts/truetype/NotoSerifTC-Regular.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "8efa77028ec947c978a8ff31d3aea580364d74c12f8b61b36cbb73df313d704e903c483d3be8ecbdce2f78820c46e5ebc9e21e13702fdecbe4361fbea41ae9d2",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:af061cfc-d2fd-488b-b378-8487ce98a727"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:a60d10c0-b019-42ba-9f43-1661aff7ff39",
+      "name": "share/fonts/truetype/NotoSerifTC-Bold.otf",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "b968449ace88836529b66c918f50765202185ee72f0144d01c342f39d105bdc3c3b59fa3012fb9e46a0ea8079e8aafc21dd64a6ffad37e15c5d578d640006971",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:423ed566-6f47-4a4b-9aab-075f6aa54d7f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:a60d10c0-b019-42ba-9f43-1661aff7ff39"
+      ],
+      "completeness": "incomplete"
+    }
+  ]
+}

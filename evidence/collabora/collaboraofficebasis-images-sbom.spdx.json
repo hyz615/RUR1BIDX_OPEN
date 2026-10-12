@@ -1,0 +1,134 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:9563203d-1785-4e21-b0b5-c1321a2dacfc",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-images",
+      "rootElement": [
+        "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-images",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:d4d01fbc-af92-410b-a134-946bdee10a6d",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9563203d-1785-4e21-b0b5-c1321a2dacfc",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e57a56b6-64aa-4a32-b84b-7f7dcee5d788",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:a82540b3-7740-445d-8f88-1098a78b8cdb",
+      "name": "share/config/images_colibre.zip",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "801881d598bac501de1c2e1ea9357c43057320c4f5115cab7c1b830b34718e0b386ae21d6b4dcaf2655f963654f72a8d4351e200c2028cb6a81846de9543d7fa",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:a82540b3-7740-445d-8f88-1098a78b8cdb"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:26ab54e2-0219-4d3f-a53d-8fcb4863ed9d",
+      "name": "share/config/images_colibre_svg.zip",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "00e2af505999c49b1bc06cc3193da6ec04e1da0001f4da79e1762e8a59e99eebefd9f58017ee228f04d639783fa89833d40b71ddc7ec3a9e538f11aa0ba3d243",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:f9774e5a-5aa0-486b-910a-ff69e16e6b22",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:26ab54e2-0219-4d3f-a53d-8fcb4863ed9d"
+      ],
+      "completeness": "incomplete"
+    }
+  ]
+}

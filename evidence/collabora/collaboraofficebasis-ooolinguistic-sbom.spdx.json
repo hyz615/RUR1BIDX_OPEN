@@ -1,0 +1,82 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:1dbb497f-4911-4e0b-9dc0-8d528e55f69e",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-ooolinguistic",
+      "rootElement": [
+        "urn:uuid:31463ca6-8205-455a-b4a0-dfe9f67c40e5"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:31463ca6-8205-455a-b4a0-dfe9f67c40e5",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-ooolinguistic",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:fc94408b-7eb1-4621-97d2-6c27b1f89887",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:1dbb497f-4911-4e0b-9dc0-8d528e55f69e",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:31463ca6-8205-455a-b4a0-dfe9f67c40e5"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:e9da851c-8cdc-4217-8f8c-fa6673d84131",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:31463ca6-8205-455a-b4a0-dfe9f67c40e5",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    }
+  ]
+}

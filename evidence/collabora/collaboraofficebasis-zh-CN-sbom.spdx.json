@@ -1,0 +1,160 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:3fa29ed6-e633-482e-a992-0ed470c4ccd2",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-zh-CN",
+      "rootElement": [
+        "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraofficebasis-zh-CN",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:2fc2b4a9-038e-4314-8174-33c90cf4cfa0",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:3fa29ed6-e633-482e-a992-0ed470c4ccd2",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:b682d308-509b-4b91-bf98-3d19aee6b456",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:66fd5862-0e38-4319-9e41-0b2d2de9c32a",
+      "name": "share/autotext/zh-CN/standard.bau",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "e6f994e5a7306a079ed2629f603bc621f11a19564dd1f472753fea02fa55a15acb37b01d865fd5f397a0092041bfe4c1e01076eaa95e14f4dea98ac1595918c8",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:66fd5862-0e38-4319-9e41-0b2d2de9c32a"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:1cb3f64a-e4ae-42e5-8af7-5a83e7930b6b",
+      "name": "share/autotext/zh-CN/template.bau",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "414279fd8c8777fdfdce27d62d7ffa3f8a4b1b0a5d3a8ed49515ba53a615b18bad9db281c4d8283cb134dde252000102027a4898b8a2570ab21e8f8668bd00e9",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:1cb3f64a-e4ae-42e5-8af7-5a83e7930b6b"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:9ae8429c-9c44-423d-ba68-bf82aa82a994",
+      "name": "share/autotext/zh-CN/crdbus50.bau",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "6930796742cb3e7b1ea6adb7dc0a2456f16afe4c1374a608c65d2f831a61dd2d20c81783ec2968aa72fae8fded1c265a5f9748b51b5c40bc7bd676dd4a5bd499",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:a25a5738-dac1-4f70-92d3-9077e03b6e7f",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:9ae8429c-9c44-423d-ba68-bf82aa82a994"
+      ],
+      "completeness": "incomplete"
+    }
+  ]
+}

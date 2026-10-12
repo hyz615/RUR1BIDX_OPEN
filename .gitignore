@@ -1,0 +1,9 @@
+/sources/
+/go-proxy/
+/build/
+/.venv/
+__pycache__/
+*.pyc
+*.partial
+.env
+.env.*

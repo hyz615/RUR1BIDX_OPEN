@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "https://github.com/CollaboraOnline/online.mirror.git",
+    "ref": "cp-26.04.5-1",
+    "commit": "22ce52fb5173821dd90782638afcbfb6b6d7cb40",
+    "archive_url": "https://github.com/CollaboraOnline/online.mirror/archive/22ce52fb5173821dd90782638afcbfb6b6d7cb40.tar.gz",
+    "archive_sha256": "534f4390c473744f4809e36775d711fd9df6e0c872e5190bf5af8f72b008d1dd",
+    "license": "MPL-2.0",
+    "include_path": "engine/include",
+    "sparse_patterns": ["/*", "!/engine/", "/engine/", "!/engine/*", "/engine/include/", "!/engine/include/*", "/engine/include/COKit/", "/engine/officecfg/", "/engine/distro-configs/", "/engine/translations/", "!/engine/translations/*", "/engine/translations/source/", "!/engine/translations/source/*", "/engine/translations/source/zh-CN/"]
+  },
+  "parallel_jobs": 8,
+  "build_id": 1,
+  "server_adapter": {
+    "compile_definitions": ["_GLIBCXX_USE_CXX11_ABI=0"],
+    "executables": ["coolconfig", "coolconvert", "coolforkit-caps", "coolforkit-ns", "coolmount", "coolstress", "coolwsd"],
+    "include_directories": ["common", "net", "wsd", "kit", "engine/include"],
+    "poco_components": ["NetSSL", "Crypto", "Net", "Zip", "Util", "JSON", "XML", "Foundation"],
+    "additional_libraries": {"coolwsd": ["wsd", "shared"]},
+    "whole_archive": {"coolwsd": ["wsd", "shared"]},
+    "compile_options": {"simd": ["-mavx2", "-O3"]},
+    "script": "tools/collabora-open/gbuild_to_cmake.py"
+  },
+  "node": {
+    "url": "https://nodejs.org/dist/v22.23.3/node-v22.23.3-linux-x64.tar.xz",
+    "sha256": "df450af89261115ef9f9e3830c3eeb2cc9213b63c720b1af623cb5dcbe2e02de"
+  },
+  "configure_arguments": [
+    "--prefix=/usr", "--sysconfdir=/etc", "--localstatedir=/var",
+    "--disable-tests", "--disable-cypress", "--disable-debug",
+    "--with-lo-path=/opt/collaboraoffice", "--with-lang=en-US zh-CN"
+  ],
+  "install_make_arguments": ["GBUILD_EXES=", "GBUILD_EXES_NOINST=", "ALL_LOCAL_DEPS=", "coolwsddata_DATA=discovery.xml favicon.ico"],
+  "poco": {
+    "version": "1.15.3",
+    "url": "https://github.com/pocoproject/poco/releases/download/poco-1.15.3-release/poco-1.15.3-all.tar.bz2",
+    "sha256": "562a1ba1a6db4665f81091c35e997b73f87e1b45e2ab2854cd720d2349518abc",
+    "cmake_arguments": [
+      "-DCMAKE_BUILD_TYPE=Release", "-DBUILD_SHARED_LIBS=OFF", "-DCMAKE_CXX_FLAGS=-D_GLIBCXX_USE_CXX11_ABI=0",
+      "-DENABLE_TESTS=OFF", "-DENABLE_SAMPLES=OFF", "-DENABLE_DATA=OFF",
+      "-DENABLE_MONGODB=OFF", "-DENABLE_REDIS=OFF", "-DENABLE_JWT=OFF",
+      "-DENABLE_ACTIVERECORD=OFF", "-DENABLE_ENCODINGS=OFF"
+    ]
+  },
+  "package": {
+    "name": "rur1-coolwsd",
+    "version": "26.04.5.1-1+rur1.1",
+    "architecture": "amd64",
+    "replaces": ["coolwsd", "coolwsd-deprecated"],
+    "maintainer": "RUR1 BIDX contributors",
+    "description": "Document editing service built from Collabora Online MPL sources",
+    "template_package_glob": "coolwsd_*.deb",
+    "source_install_files": {"debian/apparmor-profile": "etc/apparmor.d/usr.bin.coolwsd", "debian/coolwsd.service": "lib/systemd/system/coolwsd.service"},
+    "configuration_file": "etc/coolwsd/coolwsd.xml",
+    "configuration_values": {"sys_template_path": "/opt/cool/systemplate", "child_root_path": "/opt/cool/child-roots", "file_server_root_path": "/usr/share/coolwsd", "cache_files/path": "/opt/cool/cache"},
+    "capabilities": {"/usr/bin/coolforkit-caps": "cap_fowner,cap_chown,cap_sys_chroot=ep", "/usr/bin/coolmount": "cap_sys_admin=ep"}
+  },
+  "engine": {
+    "cxx_standard_library_abi": {"implementation": "libstdc++", "cxx11_abi": false, "evidence": "Pinned libmergedlo.so uses _ZNSs* string ABI; COKit passes std::string across the runtime boundary"},
+    "version": "26.04.5-1",
+    "packages_glob": "collabora*.deb",
+    "runtime_path": "/opt/collaboraoffice",
+    "version_file": "program/versionrc",
+    "license_evidence": "docker/README",
+    "upstream_packages": "config/collabora_upstream_packages.json"
+  },
+  "branding": {
+    "product_config": "config/product.json",
+    "source_directory": "desktop/collabora_branding",
+    "install_directory": "usr/share/coolwsd/browser/dist",
+    "source_url": "https://github.com/hyz615/RUR1BIDX_OPEN"
+  },
+  "output": {
+    "package_directory": "release/dependency-bundles/collabora-source-build",
+    "manifest_name": "build-manifest.json",
+    "source_archive_name": "collabora-online-26.04.5-rur1.1-source.tar.gz"
+  },
+  "docker": {
+    "base_image": "ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55",
+    "tag": "rur1/collabora:26.04.5.1-rur1.1",
+    "dockerfile": "tools/collabora-open/Dockerfile",
+    "entrypoint": "tools/collabora-open/entrypoint.sh",
+    "runtime_packages": ["ca-certificates", "libcap2-bin", "libssl3t64", "libpng16-16t64", "libzstd1", "libpcre2-8-0", "libexpat1", "zlib1g", "fonts-noto-cjk", "python3-lxml"]
+  },
+  "verification": {
+    "container_prefix": "rur1-editor-verification",
+    "container_port": 9980,
+    "capabilities": ["SYS_ADMIN", "SYS_CHROOT", "FOWNER", "CHOWN"],
+    "document_fixture": "test/data/new.docx",
+    "timeout_seconds": 180,
+    "poll_interval_ms": 500,
+    "request_timeout_ms": 5000,
+    "max_recorded_message_characters": 300,
+    "failure_log_lines": 80,
+    "language": "zh-CN",
+    "result_file": "wopi-verification.json",
+    "server_arguments": ["--o:ssl.enable=false", "--o:ssl.termination=false", "--o:admin_console.enable=false", "--o:logging.level=warning", "--o:welcome.enable=false", "--o:fetch_update_check=0"]
+  }
+}

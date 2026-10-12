@@ -1,0 +1,310 @@
+{
+  "@context": "https://spdx.org/rdf/3.0.1/spdx-context.jsonld",
+  "@graph": [
+    {
+      "type": "Organization",
+      "spdxId": "https://collaboraoffice.com",
+      "creationInfo": "_:creationinfo",
+      "externalIdentifers": [
+        {
+          "type": "ExternalIdentifier",
+          "externalIdentifierType": "email",
+          "identifier": "hello@collaboraoffice.com"
+        }
+      ]
+    },
+    {
+      "type": "CreationInfo",
+      "@id": "_:creationinfo",
+      "specVersion": "3.0.1",
+      "created": "2026-10-07T23:51:08Z",
+      "createdBy": [
+        "https://collaboraoffice.com"
+      ],
+      "createdUsing": [
+        "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37"
+      ]
+    },
+    {
+      "type": "Tool",
+      "spdxId": "urn:uuid:1b4814d4-7d4f-44da-a3fb-de924707ea37",
+      "creationInfo": "_:creationinfo",
+      "name": "Custom Script"
+    },
+    {
+      "type": "SpdxDocument",
+      "spdxId": "urn:uuid:bee33574-f7a0-49a0-8748-a53debfb5328",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraoffice",
+      "rootElement": [
+        "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d"
+      ],
+      "profileConformance": [
+        "core",
+        "software",
+        "simpleLicensing"
+      ]
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "creationInfo": "_:creationinfo",
+      "name": "CollaboraOffice-collaboraoffice",
+      "software_packageVersion": "26.04.5.1"
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:4828eb59-ac2d-4da3-8c28-b6a1a8eb71be",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:bee33574-f7a0-49a0-8748-a53debfb5328",
+      "relationshipType": "describes",
+      "to": [
+        "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d"
+      ]
+    },
+    {
+      "type": "Relationship",
+      "spdxId": "urn:uuid:5496d8ce-fdc9-4cb9-961c-e4f5a2611452",
+      "creationInfo": "_:creationinfo",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasConcludedLicense",
+      "to": [
+        "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73"
+      ]
+    },
+    {
+      "type": "simplelicensing_LicenseExpression",
+      "spdxId": "urn:uuid:ba8a7e22-0af9-4f8b-b075-6af24e8d5a73",
+      "creationInfo": "_:creationinfo",
+      "simplelicensing_licenseExpression": "MPL-2.0"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:17b12678-ee16-4251-9032-a48a428d691f",
+      "name": "program/oosplash",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "bff7e910e1f7d987dc828ea4f6738e8314089d5006e5f7fbfee99ab71d14b768056014614df1fb00a394de3fb77884e73cfe63a5ec84719029e215450f4ceeed",
+          "software_additionalPurpose": [
+            "executable"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:17b12678-ee16-4251-9032-a48a428d691f"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:17b12678-ee16-4251-9032-a48a428d691f",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:8f0c04bb-cd09-4173-9c03-254cd94f1978",
+        "urn:uuid:a684c0e2-404c-4c19-9ea7-7a74c7940670"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:6b4b2690-c7bc-44f5-a23e-35a2dea063e6",
+      "creationInfo": "_:creationinfo",
+      "name": "libpthread.so.0",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:bd9339b6-4018-41c3-a97e-b45c36f69146",
+      "creationInfo": "_:creationinfo",
+      "name": "libgcc_s.so.1",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:495001f9-50e9-45d9-921e-16b99e10d3f3",
+      "creationInfo": "_:creationinfo",
+      "name": "libc.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:b8369cf9-37ac-4e11-9ab3-b1f95f32c5cc",
+      "creationInfo": "_:creationinfo",
+      "name": "libstdc++.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:5db3b2d9-d20c-4e2a-9c3e-407acb87e919",
+      "creationInfo": "_:creationinfo",
+      "name": "libm.so.6",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:17b12678-ee16-4251-9032-a48a428d691f",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:6b4b2690-c7bc-44f5-a23e-35a2dea063e6",
+        "urn:uuid:bd9339b6-4018-41c3-a97e-b45c36f69146",
+        "urn:uuid:495001f9-50e9-45d9-921e-16b99e10d3f3",
+        "urn:uuid:b8369cf9-37ac-4e11-9ab3-b1f95f32c5cc",
+        "urn:uuid:5db3b2d9-d20c-4e2a-9c3e-407acb87e919"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:cb390887-5839-4fa7-bb8b-ac7c42abe871",
+      "name": "program/soffice.bin",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "07306f8476ff651e550f1cf3575e914c3c5c62396578c8dd04070173a278c12b05d88f9ad7accd151b8cfc9c5367e0f59336fa1a138282e7a8a6117b3a153c79",
+          "software_additionalPurpose": [
+            "executable"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:cb390887-5839-4fa7-bb8b-ac7c42abe871"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:cb390887-5839-4fa7-bb8b-ac7c42abe871",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:8f0c04bb-cd09-4173-9c03-254cd94f1978",
+        "urn:uuid:a684c0e2-404c-4c19-9ea7-7a74c7940670"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:cb390887-5839-4fa7-bb8b-ac7c42abe871",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:495001f9-50e9-45d9-921e-16b99e10d3f3"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:50891de3-8b81-4c73-ba9d-ddfc31caffb6",
+      "name": "program/unoinfo",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "90ba1bc61fc65ab41c358eb1ee96a9e3c53dd3e2467a3fdeb14db9327f739f56511a9d2a5fc7dc089413b651a2fa6151e2c82a6c493bd2dd4dd7312dba316017",
+          "software_additionalPurpose": [
+            "executable"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:50891de3-8b81-4c73-ba9d-ddfc31caffb6"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "software_Package",
+      "spdxId": "urn:uuid:ecf4f599-3799-40ea-86d9-1f03fdc63964",
+      "creationInfo": "_:creationinfo",
+      "name": "/bin/sh",
+      "comment": "Supplied by the operating system."
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:50891de3-8b81-4c73-ba9d-ddfc31caffb6",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:ecf4f599-3799-40ea-86d9-1f03fdc63964"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:3b7196bb-e79e-4856-863f-8a17c4439c6f",
+      "name": "program/soffice",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "8e9eae1599dd12eda2a324c2605ba4d80223ac0a4c616195efc4520c8e1b8bc71c399b346adcd977835265e30cec1dc66af8ad4b39d1bc0c725b1adf8822d3c7",
+          "software_additionalPurpose": [
+            "executable"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:3b7196bb-e79e-4856-863f-8a17c4439c6f"
+      ],
+      "completeness": "incomplete"
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:3b7196bb-e79e-4856-863f-8a17c4439c6f",
+      "relationshipType": "dependsOn",
+      "to": [
+        "urn:uuid:ecf4f599-3799-40ea-86d9-1f03fdc63964"
+      ],
+      "completeness": "noAssertion"
+    },
+    {
+      "type": "software_File",
+      "spdxId": "urn:uuid:a9ede1e8-7185-4ee7-9315-ae5acaf07188",
+      "name": "EULA.odt",
+      "verifiedUsing": [
+        {
+          "type": "Hash",
+          "algorithm": "sha512",
+          "hashValue": "34deaed1e72e9528a57ad6d9b42ee4212c63cb53627659ee72a2b19424711c945a9b275323e6cd234c2bdf861895393f15adaa0e6138b217d19efb527fd7364a",
+          "software_additionalPurpose": [
+            "archive",
+            "container"
+          ],
+          "comment": "software_additionalPurpose field is used to indicate the properties of BSI TR-03183-2"
+        }
+      ]
+    },
+    {
+      "type": "Relationship",
+      "from": "urn:uuid:9b5b5447-4c57-4ad4-8ef7-fede6340879d",
+      "relationshipType": "hasDistributionArtifact",
+      "to": [
+        "urn:uuid:a9ede1e8-7185-4ee7-9315-ae5acaf07188"
+      ],
+      "completeness": "incomplete"
+    }
+  ]
+}

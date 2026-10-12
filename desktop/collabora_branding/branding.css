@@ -1,0 +1,9 @@
+/* SPDX-License-Identifier: MPL-2.0
+ * This Source Code Form is subject to the Mozilla Public License, v. 2.0.
+ * See https://mozilla.org/MPL/2.0/.
+ * Original RUR1 BIDX branding; contains no Collabora commercial brand assets.
+ */
+:root {
+  --color-primary: {{PRIMARY_COLOR}};
+  --color-primary-dark: {{PRIMARY_COLOR}};
+}

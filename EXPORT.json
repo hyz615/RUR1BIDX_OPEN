@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5b36789de9433dfdf60a21dbf278c846a8c38f545c13d9f3796be601fe44002b",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "BUILDING.md",
+      "sha256": "98db900f4d4584fbba8bee3f871efc39a53d8d9b6b3d8ff0ac1d6b87d4301fef",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "SOURCE_SCOPE.md",
+      "sha256": "46cebef5da6a978dda195677743c36461bb8f24d276679bcf5415f9ba2128661",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "fetch_sources.py",
+      "sha256": "87bd18bd0cb95971bd2a7a13823707df081a44b902bbda13d0e2cddccc288c16",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "restore_go_proxy.py",
+      "sha256": "a776af79394441d9b3a4e47061c8ecd228fd7f9a89ef4c61afffacd8f97083d3",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "download-settings.json",
+      "sha256": "ead6eada51f1b3ad02ade6e9b3d20ed209bbfca8e2683f0408b0a6b3376f3e03",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "LICENSES/Apache-2.0.txt",
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+      "license": "Apache-2.0",
+      "origin": "Apache Software Foundation"
+    },
+    {
+      "path": "LICENSES/MPL-2.0.txt",
+      "sha256": "cde215e5b42363eb28ca2462c4558ff4807b38f383c537624c31e44657ac58f4",
+      "license": "MPL-2.0",
+      "origin": "Mozilla"
+    },
+    {
+      "path": "components/sandbox-helpers/spec-guard.c",
+      "sha256": "ac424557f0ec912dd11f7d320578b77c7d2e08ed36f57df626af6b3a551b018e",
+      "license": "Apache-2.0",
+      "origin": "LibreChat Code Interpreter and RUR1 modifications"
+    },
+    {
+      "path": "components/sandbox-helpers/rootfs-setup.c",
+      "sha256": "52d922acb9af7c8b6fed45a29555e1fcd41de59d3429548b7b829ea0410308bb",
+      "license": "Apache-2.0",
+      "origin": "LibreChat Code Interpreter and RUR1 modifications"
+    },
+    {
+      "path": "components/sandbox-helpers/LICENSE",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "license": "Apache-2.0",
+      "origin": "LibreChat Code Interpreter"
+    },
+    {
+      "path": "components/sandbox-helpers/NOTICE",
+      "sha256": "6a00300c8c584f827b2099234733f5a7322b7a725bb133077aaef7c1d47b908f",
+      "license": "Apache-2.0",
+      "origin": "LibreChat Code Interpreter"
+    },
+    {
+      "path": "config/collabora_build.json",
+      "sha256": "fae7b482cee6491cc7a7043abe71a894d3f836e063f7e72498a5c09e3d5be51a",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "config/collabora_upstream_packages.json",
+      "sha256": "17f9d93e2587a784ce481992d999e0b19cafc1457ada87460b8a9a8e3f539589",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "scripts/build_collabora_source.py",
+      "sha256": "8ceaba2e041893e086d0b818c1e584e59af79f99ac5fab72d2cd6bc26f49593f",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "tools/collabora-open/Dockerfile",
+      "sha256": "0b72e0c6784d3a112afdda87c2ab408e6f99d204d760a69343545e7639f75859",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "tools/collabora-open/entrypoint.sh",
+      "sha256": "418fac57a7f40f2bd19af386201762eec9fea024d6e7b8a6cb1e7c9084838984",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "tools/collabora-open/gbuild_to_cmake.py",
+      "sha256": "29c0fbe9316899783cb353a03736653a29407cfe3781ef7d0927ad2ddad0cf77",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "tools/collabora-open/README.md",
+      "sha256": "f5e8217caef9f2cb9295101bfdc0ba2ef2709af857f523a788cc1ece6421634c",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "tools/collabora-open/verify_wopi.mjs",
+      "sha256": "7b040a930db22948c9c5d71cdc524ae4ef8b3cbaceaa065af094e31c1ce2943e",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "desktop/collabora_branding/branding.css",
+      "sha256": "6577d3a0097ef540c27e868da7bed1f73a792fd021e4bf4259d8ca3cd606a50d",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "desktop/collabora_branding/branding.js",
+      "sha256": "4bdd5e541f88a2ba923537a9bb887a38f3342833811e7efea77178ca2ef3af6f",
+      "license": "MPL-2.0",
+      "origin": "RUR1 Collabora corresponding-source build"
+    },
+    {
+      "path": "config/product.json",
+      "sha256": "b9eec06b8a51e8d021bbe35e46c50e3fb6125198906acc0f39b1170fc1f5cfad",
+      "license": "MPL-2.0",
+      "origin": "Minimal public branding configuration"
+    },
+    {
+      "path": "inventories/runtime-packages.json",
+      "sha256": "06f579dd88e51d7ed3056be3b462c3626e9230cd90536b25e248f5d6194e4078",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "evidence/collabora/collaboraoffice-sbom.spdx.json",
+      "sha256": "c6ac482eb4e86da32693772ba952b7c620402bcaafb1f2184fcce5e8d12306f2",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraoffice-ure-sbom.spdx.json",
+      "sha256": "9197d93b816f90f1ecb1a992d7068f3dce76ab5766765e1e6a149e94a62c3925",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-calc-sbom.spdx.json",
+      "sha256": "e21b45310cec403db7d08e0d916c2149712612ecb8588c7dc4260a8db02100fb",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-core-sbom.spdx.json",
+      "sha256": "3959c7c28f11a4fa861c38b5563dc7e4b8b1e00f3a07beb2b488fcb9a018743b",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-draw-sbom.spdx.json",
+      "sha256": "6bbca2253edf75ca1474b8ab2ab26e19089f4059c1e72ec6ddaf04eb829378d9",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-en-US-sbom.spdx.json",
+      "sha256": "f3ea17d60a1755684616b05dd0cc479a23c72bc139091369e008c57cd616d10a",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-extension-pdf-import-sbom.spdx.json",
+      "sha256": "7aa3a809e61af3f980008b9bbd62497ba2ba54296917010e6cf532e3d2b42590",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-graphicfilter-sbom.spdx.json",
+      "sha256": "b4fdf2fc4b4db47c23b7f5286360784264cbc3277c372b2d6a3e787935511580",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-images-sbom.spdx.json",
+      "sha256": "306b1b43deb921f6998adf111195b5a69533b2f9aed490d22825be9e45043d43",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-impress-sbom.spdx.json",
+      "sha256": "a7023d5fbd7bea23ffcd42c26f5d118f9538993a92b21bae9b780ff768c902cf",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-math-sbom.spdx.json",
+      "sha256": "d20f2a4b5e24eca09af7197f587baf362b98402f8b1538ee20bc40feac4cb208",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-ooofonts-sbom.spdx.json",
+      "sha256": "98e12d1631cca7e3c0306b832c05ca1cb7c9e2637daab93d2bef1f1bfb45f0f8",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-ooolinguistic-sbom.spdx.json",
+      "sha256": "65c1e0b04659db658b0618cbe62775f14d6525f218d216eaf69620a93662aa0e",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-writer-sbom.spdx.json",
+      "sha256": "7016b934ae2d74345a93ff9c26a7fce82ba946ed841976cf8c42b33e54ddd8ac",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/collaboraofficebasis-zh-CN-sbom.spdx.json",
+      "sha256": "d7d728822eca7dfdbec7df5117c4d5b6228368c5e7ede7e29f4ee5be84f4d602",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/engine-download.lst",
+      "sha256": "d490ec4bf95dede97a318166be5e7356fd24f1d9a3c890913a431f2a51c7bef0",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/engine-source-catalog.json",
+      "sha256": "3bab0f24ada3cd4c702e79f86e58aed52bd640c1ae52cf2248ab6f3844e81e36",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/LICENSE",
+      "sha256": "f86dd9a53e24cbad04be895b6f2dd5f6991ca287622e5ca1a1341a34a402f6b5",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/LICENSE.html",
+      "sha256": "0c04db4610d8bc697af33adb23f90f6128323be39303ea0b9dd312e25c6ca891",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": "evidence/collabora/NOTICE",
+      "sha256": "68421bcdfed13d444be60c23baea19c6fbd7dc5a45bd8522c924e17eff3e1903",
+      "license": "Original component licenses",
+      "origin": "Collabora original package license and SPDX records"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "5e554de5fa381ca99d14a397bce2a81642ce1181c5111ecbd7caa150c62c8fdc",
+      "license": "Apache-2.0",
+      "origin": "RUR1 source-disclosure tooling"
+    },
+    {
+      "path": "PUBLICATION_LIMITATIONS.json",
+      "sha256": "3af6b50dc0d6f7ff1a6ed31a932a09c32a9361482cdbe172e8670045b80e1aef",
+      "license": "Apache-2.0",
+      "origin": "Corresponding-source provenance audit"
+    },
+    {
+      "path": "source-catalog.json",
+      "sha256": "755483c347557e3c99ebbb654414453ab9858e0bebdec3a11eb521ec7e05fc98",
+      "license": "Apache-2.0",
+      "origin": "source inventory"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scope": "Source availability and binary provenance findings; not a declaration of infringement or an instruction to publish independent business code.",
+  "native_build_provenance": [
+    {
+      "component": "elkjs@0.9.3",
+      "reason": "Build uses mutable Maven snapshot without timestamp/checksum",
+      "coordinate": "org.eclipse.elk:org.eclipse.elk.core.meta:0.10.0-SNAPSHOT"
+    },
+    {
+      "component": "elkjs@0.9.3",
+      "reason": "Official release establishes ELK v0.9.1 plus PR955, but exact Java checkout/build receipt is absent; CI checks out mutable master. Baseline and named patch are captured, not asserted byte-identical."
+    },
+    {
+      "component": "sharp-libvips@1.2.4 and @1.3.3",
+      "reason": "Both fixed recipes edit librsvg Cargo manifests and run cargo update --workspace. Original release Cargo.lock files and every referenced registry crate are captured and checksum-verified, but the exact post-edit build lockfiles/receipts are not available; a byte-identical Rust dependency closure has not been proven."
+    },
+    {
+      "component": "heic-to@1.1.14",
+      "reason": "Runtime libheif/libde265 versions are confirmed and source captured; README describes local LLVM-path edit but does not pin Emscripten/compiler version or include the original native build receipt. Rebuilding/relinking has not been verified."
+    }
+  ],
+  "ninfer_linked_distribution_review": "https://github.com/hyz615/RUR1NINFER/blob/codex/engine-1.0.1-source/distribution/engine-1.0.1/LEGAL_REVIEW.json"
+}
